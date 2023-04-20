@@ -1,0 +1,42 @@
+.halls-list::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.hall {
+  position: relative; 
+  /*display: inline-block;
+  vertical-align: top; - 1 вариант*/
+  float: left;
+  width: 580px;
+  min-height: 349px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  background-repeat: no-repeat; 
+}
+.hall:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+} 
+.hall:nth-child(n +3) {
+  margin-bottom: 0;
+} 
+.hall__img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hall__name {
+  position: absolute;
+  max-width: 210px;
+  top: calc(50% - 80px);
+  left: calc(50% - 105px);
+  font-family: 'Arial';
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}

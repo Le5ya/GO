@@ -1,0 +1,37 @@
+.review:not(:last-child) {
+  display: block;
+  margin-bottom: 50px;
+}
+.review__wrapper {
+  position: relative;
+  min-height: 350px;
+  padding: 0 100px;
+}
+.review__person {
+  max-width: 280px;
+  min-height: 300px;
+  margin-right: 20px;
+  float: left;
+}
+.review__photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 0;
+  margin-bottom: 11px; 
+}
+.review__sign {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+.review__text {
+  vertical-align: top;
+  padding-top: 100px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
