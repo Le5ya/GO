@@ -2,3 +2,122 @@
   max-width: 1157px;
   margin: 0;
 }
+.halls__buttons {
+  display: flex;
+  padding: 0;
+ justify-content: space-between;
+ margin-bottom: 60px;
+}
+.field__title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.halls__button {
+  display: block;
+  width: 250px;
+  height: 55px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 133% ;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border-radius: 8px;
+}
+.pleasures {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-bottom: 60px;
+}
+.examples {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.example__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+}
+.date-items__wrapp {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  padding-top: 25px;
+  justify-content: space-between;
+}
+.data-item {
+  display: block;
+  width: 134px;
+  height: 52px;
+  padding: 12px 20px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.data-item_wide {
+  width: 300px;
+  margin: 0;
+}
+.data-item__label {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #211E1E;
+}
+.data-item__label:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 21px;
+  height: 15px;
+  top: 5px;
+  background-image: url('../img/poly.svg');
+  background-size: contain;
+}
+
+.data-item__input {
+  display: none;
+}
+.data-item__input_block {
+  display: block;
+  width: 300px;
+  height: 52px; 
+ }
+.person-date__wrap {
+  flex-direction: column;
+  column-gap: 12px;
+}
+.custom__wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 54px;
+}
+.button__wrapp {
+position: relative;
+height: 60px;
+}
+.form__button {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  font-weight: 70;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: #6C0287;
+}
+
+

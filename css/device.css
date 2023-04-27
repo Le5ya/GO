@@ -1,0 +1,33 @@
+.devices__title {
+  padding: 0 136px;
+}
+.devices__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 20px;
+}
+.device {
+  position: relative;
+  margin-bottom: 30px;
+  
+}
+.device__title {
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  max-width: 300px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+}
+.device_2,
+.device_4,
+.device_6 {
+  order: 1;
+}
+.device_3 {
+  order: 6;
+}
+

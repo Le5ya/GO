@@ -1,3 +1,7 @@
+.contacts__sides {
+  display: flex;
+  justify-content: space-between;
+}
 .social__item {
   display: inline-block;
   margin-right: 26px;
