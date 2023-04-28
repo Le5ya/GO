@@ -111,24 +111,18 @@
         method="POST">
         <fieldset class="fildset fildset__halls">
           <legend class="fildset__title">Выбери зал</legend>
-          <div class="hall__btn">
             <label class="lable hall__lable">
               <input class="hall__input"  type="radio" name="hall" value="80'S VIBES">
               80's vibes
             </label>
-          </div>
-          <div class="hall__btn">
             <label class="lable hall__lable">
               <input class="hall__input"  type="radio" name="hall" value="STAR WARS">
               star wars
             </label>
-          </div>
-          <div class="hall__btn">
             <label  class="lable hall__lable">
               <input class="hall__input" type="radio" name="hall" value="WILD WEST">
               wild west
             </label>
-          </div>
           <div class="hall__btn">
             <label  class="lable hall__lable">
               <input class="hall__input" type="radio" name="hall" value="NEON STYLE">
@@ -193,45 +187,34 @@
         <fieldset class="fildset fildset__custom ">
           <legend class="fildset__title">Выбери время и дату</legend>
           <div class="custom__wrapp">
-            <div class="custom__wrapp_small">
-              <label class="custom__item custom__item_small">
-                <!-- Дата* -->
-                <input class="custom__input custom__input_small" lang="en" type="date" name="date" required>
-              </label>
-              <label class="custom__item">
-                <!-- Время* -->
-                <input class="custom__input custom__input_small" type="time" name="time" required>
-              </label>
-            </div>
-            <label class="custom__item">
-              <!-- Количество человек* -->
-              <input class="custom__input"  type="number" name="nam" placeholder="Сколько человек" required>
-              
-            </label>
-          </div>
-          <div class="custom__wrapp">
-            <label class="custom__item">
-              Имя*
-              <input class="custom__input" type="text" name="name" required>
-              
-            </label>
-            <label class="custom__item">
-              Фамилия*
-              <input class="custom__input" type="text" name="surname" required>
-              
-            </label>
-          </div>
-          <div class="custom__wrapp">
-          <label class="custom__item">
-            Номер телефона*
-            <input class="custom__input" type="number" name="phone" required>
-          </label>
-          <label class="custom__item">
-            Email*
-            <input class="custom__input" type="email" name="email" required>
-          </label>
-          </div>
-          
+            <div class="custom__wrapp_inner">
+              <label class="custom__item custom__item_small" for="date"></label>
+                <input class="custom__input custom__input_small" lang="en" type="date" name="date" id="date" required>
+             
+              <label class="custom__item" for="time"></label>
+                <input class="custom__input custom__input_small" type="time" name="time"id="time" required>
+              </div>  
+              <label class="custom__item custom__item_nam" for="num"></label>
+                <input class="custom__input custom__input_nam" type="number" name="nam" placeholder="Сколько человек" id="num" required>
+            </div>  
+              <div class="custom__wrapp">
+                <label class="custom__item" for="name">Имя</label>
+                  
+                <input class="custom__input" type="text" name="name" id="name" required>
+                
+                <label class="custom__item" for="surname">Фамилия</label>
+                  
+                <input class="custom__input" type="text" name="surname" id="surname" required>
+              </div>
+              <div class="custom__wrapp"> 
+                <label class="custom__item" for="phone">Телефон</label>
+                  
+                <input class="custom__input" type="number" name="phone" id="phone" required>
+                
+                <label class="custom__item" for="email">E-mail</label>
+                  
+                <input class="custom__input" type="email" name="email" id="email" required>
+            </div> 
         </fieldset>
           <div class="form-button__wrap">
             <button class="button book__button">Забронировать</button> 
