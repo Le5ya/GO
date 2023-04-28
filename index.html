@@ -109,117 +109,123 @@
         id="book_up"
         action="https://jsonplaceholder.typicode.com/posts"
         method="POST">
-        <fieldset>
-          <legend>Выбери зал</legend>
-          <label>
+        <fieldset class="fildset fildset__halls">
+          <legend class="fildset__title">Выбери зал</legend>
+          <label class="lable hall__lable">
             <input type="radio" name="hall" value="80'S VIBES">
             80's vibes
           </label>
-          <label>
+          <label class="lable hall__lable">
             <input type="radio" name="hall" value="STAR WARS">
             star wars
           </label>
-          <label>
+          <label class="lable hall__lable">
             <input type="radio" name="hall" value="WILD WEST">
             wild west
           </label>
-          <label>
+          <label class="lable hall__lable">
             <input type="radio" name="hall" value="NEON STYLE">
             neon style
           </label>
         </fieldset>
-        <fieldset>
-          <legend>Собери набор развлечений</legend>
-          <fieldset>
-            <legend>Приставка</legend>
-            <label>
+        <fieldset class="fildset fildset__pleasure">
+          <legend class="fildset__title">Собери набор развлечений</legend>
+          <fieldset class="subfildset">
+            <legend class="subfildset__title">Приставка</legend>
+            <label class="subfildset__item" >
               <input type="radio" name="console" value="play">
               Play STation
             </label>
-            <label>
+            <label class="subfildset__item">
               <input type="radio" name="console"  value="sega">
               Sega Mega Drive
             </label>
-            <label>
+            <label class="subfildset__item">
               <input type="radio" name="console"  value="x-box">
               X-box One 
             </label>
-            <label>
+            <label class="subfildset__item" >
               <input type="radio" name="console"  value="dendy">
               Dendy
             </label>
           </fieldset>
-          <fieldset><legend>Настольные игры</legend>
-            <label>
-              <input type="checkbox" name="plays" value="jenda">
-              Jenda
-            </label>
-            <label>
-              <input type="checkbox" name="plays" value="monopoly">
-              Monopoly
-            </label>
-            <label>
-              <input type="checkbox" name="plays" value="maich">
-              Маичкин
-            </label>
-            <label>
-              <input type="checkbox" name="plays" value="alias">
-              Alias
-            </label>
+          <fieldset class="subfildset">
+              <legend class="subfildset__title">Настольные игры</legend>
+    
+              <label class="subfildset__item" >
+                <input type="checkbox" name="plays" value="jenda">
+                Jenda
+              </label>
+              <label class="subfildset__item" >
+                <input type="checkbox" name="plays" value="monopoly">
+                Monopoly
+              </label>
+              <label class="subfildset__item" >
+                <input type="checkbox" name="plays" value="maich">
+                Маичкин
+              </label>
+              <label class="subfildset__item" >
+                <input type="checkbox" name="plays" value="alias">
+                Alias
+              </label>
           </fieldset>
-          <fieldset><legend>Дополнительно</legend>
-            <label>
-              <input type="checkbox" name="addition" value="car">
-              Караоке
-            </label>
-            <label>
-              <input type="checkbox" name="addition" value="VR">
-              VR
-            </label>
+          <fieldset class="subfildset">
+            <legend class="subfildset__title">Дополнительно</legend>
+              <label class="subfildset__item" >
+                <input type="checkbox" name="addition" value="car">
+                Караоке
+              </label>
+              <label class="subfildset__item" >
+                <input type="checkbox" name="addition" value="VR">
+                VR
+              </label>
           </fieldset>
         </fieldset>
         
-        <fieldset><legend>Выбери время и дату</legend>
-          <label>
-            Дата*
-            <input lang="en" type="date" name="date" required>
-          </label>
-          <label>
-            Время*
-            <input type="time" name="time" required>
-            
-          </label>
-          <label>
-            Количество человек*
-            <input type="number" name="nam" required>
-            
-          </label>
-          <label>
-            Имя*
-            <input type="text" name="name" required>
-            
-          </label>
-          <label>
-            Фамилия*
-            <input type="text" name="surname" required>
-            
-          </label>
-          <label>
+        <fieldset class="fildset fildset__custom">
+          <legend class="fildset__title">Выбери время и дату</legend>
+          <div class="custom__wrapp">
+            <div class="custom__wrapp_small">
+              <label class="custom__item custom__item_small">
+                Дата*
+                <input class="custom__input custom__input_small" lang="en" type="date" name="date" required>
+              </label>
+              <label class="custom__item">
+                Время*
+                <input class="custom__input custom__input_small" type="time" name="time" required>
+            </div>
+              
+            </label>
+            <label class="custom__item">
+              <!-- Количество человек* -->
+              <input class="custom__input"  type="number" name="nam" placeholder="Сколько человек" required>
+              
+            </label>
+          </div>
+          <div class="custom__wrapp">
+            <label class="custom__item">
+              Имя*
+              <input class="custom__input" type="text" name="name" required>
+              
+            </label>
+            <label class="custom__item">
+              Фамилия*
+              <input class="custom__input" type="text" name="surname" required>
+              
+            </label>
+          </div>
+         <div class="custom__wrapp">
+          <label class="custom__item">
             Номер телефона*
-            <input type="number" name="phone" required>
-            
+            <input class="custom__input" type="number" name="phone" required>
           </label>
-          <label>
-            <input type="checkbox" required>
-            Я старше 18 лет*
+          <label class="custom__item">
+            Email*
+            <input class="custom__input" type="email" name="email" required>
           </label>
+         </div>
         </fieldset>
-        <button class="button book__button">Забронировать</button>
-        <label>
-          <input type="checkbox" name="addition" value="VR">
-          Согласен на обработку данных
-        </label>       
-        
+        <button class="button book__button">Забронировать</button>      
       </form>
     </div>  
   </section>
