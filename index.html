@@ -111,22 +111,30 @@
         method="POST">
         <fieldset class="fildset fildset__halls">
           <legend class="fildset__title">Выбери зал</legend>
-          <label class="lable hall__lable">
-            <input type="radio" name="hall" value="80'S VIBES">
-            80's vibes
-          </label>
-          <label class="lable hall__lable">
-            <input type="radio" name="hall" value="STAR WARS">
-            star wars
-          </label>
-          <label class="lable hall__lable">
-            <input type="radio" name="hall" value="WILD WEST">
-            wild west
-          </label>
-          <label class="lable hall__lable">
-            <input type="radio" name="hall" value="NEON STYLE">
-            neon style
-          </label>
+          <div class="hall__btn">
+            <label class="lable hall__lable">
+              <input class="hall__input"  type="radio" name="hall" value="80'S VIBES">
+              80's vibes
+            </label>
+          </div>
+          <div class="hall__btn">
+            <label class="lable hall__lable">
+              <input class="hall__input"  type="radio" name="hall" value="STAR WARS">
+              star wars
+            </label>
+          </div>
+          <div class="hall__btn">
+            <label  class="lable hall__lable">
+              <input class="hall__input" type="radio" name="hall" value="WILD WEST">
+              wild west
+            </label>
+          </div>
+          <div class="hall__btn">
+            <label  class="lable hall__lable">
+              <input class="hall__input" type="radio" name="hall" value="NEON STYLE">
+              neon style
+            </label>
+          </div>
         </fieldset>
         <fieldset class="fildset fildset__pleasure">
           <legend class="fildset__title">Собери набор развлечений</legend>
@@ -182,16 +190,16 @@
           </fieldset>
         </fieldset>
         
-        <fieldset class="fildset fildset__custom">
+        <fieldset class="fildset fildset__custom ">
           <legend class="fildset__title">Выбери время и дату</legend>
           <div class="custom__wrapp">
             <div class="custom__wrapp_small">
               <label class="custom__item custom__item_small">
-                Дата*
+                <!-- Дата* -->
                 <input class="custom__input custom__input_small" lang="en" type="date" name="date" required>
               </label>
               <label class="custom__item">
-                Время*
+                <!-- Время* -->
                 <input class="custom__input custom__input_small" type="time" name="time" required>
               </label>
             </div>
@@ -223,8 +231,11 @@
             <input class="custom__input" type="email" name="email" required>
           </label>
           </div>
+          
         </fieldset>
-        <button class="button book__button">Забронировать</button>      
+          <div class="form-button__wrap">
+            <button class="button book__button">Забронировать</button> 
+          </div> 
       </form>
     </div>  
   </section>
