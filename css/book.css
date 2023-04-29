@@ -13,14 +13,16 @@
   justify-content: space-between;
   border: none;
 }
-.fildset__pleasure
-.fieldset__book {
+.fildset__pleasure,
+.fildset__custom {
   max-width: 980px;
   margin: 0 auto;
 
 }
 .fieldset__custom {
   column-gap: 30px;
+  margin-bottom: 40px;
+
 }
 
 .fildset__title {
@@ -151,8 +153,9 @@
 .form-button__wrap {
   display: flex;
   justify-content: end;
-  width: 100%;
-  padding: 0 10px;
+  max-width: 980px;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 
