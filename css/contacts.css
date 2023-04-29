@@ -4,7 +4,7 @@
 .contacts__sides {
   display: flex;
   justify-content: space-between;
-  /* gap: 60px; */
+  gap: 60px;
 }
 .social__item {
   display: inline-block;
@@ -37,6 +37,7 @@
 }
 .adress {
   display: block;
+  min-width: 440px;  
   margin-bottom: 35px;
 }
 
