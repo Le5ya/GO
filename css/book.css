@@ -40,12 +40,14 @@
   height: 27px;
   display: inline-block;
   vertical-align: bottom;
+  margin-right: 12px;
 }
 .input__checkbox {
   width: 25px;
   height: 25px;
   display: inline-block;
   vertical-align: bottom;
+  margin-right: 12px;
 }
 
 .hall__lable {
@@ -130,9 +132,7 @@
   max-width: 100%;
   
 }
-/* .custom__input_nam {
-  max-width: 300px;
-} */
+
 .custom__item {
   font-size: 14px;
   line-height: 22px;
