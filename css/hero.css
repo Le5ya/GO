@@ -1,8 +1,8 @@
 .hero__container {
   position: relative;
-  height: 823px;
-  
+  min-height: 823px;  
 }
+
 .hero__container:after {
   position: absolute;
   content: '';
@@ -15,10 +15,12 @@
   z-index: 10;
 }
 .down-arrow {
+  display: block;
   position: absolute;
-  left: 570px;
-  top: 620px;
+  left: calc(50% - 47px);
+  bottom: 90px;
   z-index: 20;
+  border: red solid #000;
 }
 
 

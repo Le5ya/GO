@@ -18,7 +18,7 @@
         <li class="menu__item"><a href="#about">О нас</a></li>
         <li class="menu__item"><a href="#book">Бронь</a></li>
         <li class="menu__item"><a href="#reviews">Отзывы</a></li>
-        <li class="menu__item"><a href="#reviews">Контакты</a></li>
+        <li class="menu__item"><a href="#contacts">Контакты</a></li>
       </ul>
       <button class="button header__button">Заказать звонок</button>
     </div>
@@ -40,9 +40,11 @@
         </div>
       </div>
       <button class="hero__button">Забронировать</button>
-      <figure class="down-arrow">
-        <img src="img/down.svg" alt="">
-      </figure>
+    <a class="down-arrow" href="#contacts" class="">
+      <img src="img/down.svg" alt="">
+    </a>
+        
+      
     </div>
   </section>
   <section class="section devices">
@@ -135,19 +137,19 @@
           <fieldset class="subfildset">
             <legend class="subfildset__title">Приставка</legend>
             <label class="subfildset__item" >
-              <input type="radio" name="console" value="play">
+              <input class="input__radio" type="radio" name="console" value="play">
               Play STation
             </label>
             <label class="subfildset__item">
-              <input type="radio" name="console"  value="sega">
+              <input class="input__radio" type="radio" name="console"  value="sega">
               Sega Mega Drive
             </label>
             <label class="subfildset__item">
-              <input type="radio" name="console"  value="x-box">
+              <input class="input__radio" type="radio" name="console"  value="x-box">
               X-box One 
             </label>
             <label class="subfildset__item" >
-              <input type="radio" name="console"  value="dendy">
+              <input class="input__radio" type="radio" name="console"  value="dendy">
               Dendy
             </label>
           </fieldset>
@@ -155,66 +157,62 @@
               <legend class="subfildset__title">Настольные игры</legend>
     
               <label class="subfildset__item" >
-                <input type="checkbox" name="plays" value="jenda">
+                <input class="input__checkbox" type="checkbox" name="plays" value="jenda">
                 Jenda
               </label>
               <label class="subfildset__item" >
-                <input type="checkbox" name="plays" value="monopoly">
+                <input class="input__checkbox" type="checkbox" name="plays" value="monopoly">
                 Monopoly
               </label>
               <label class="subfildset__item" >
-                <input type="checkbox" name="plays" value="maich">
+                <input class="input__checkbox" type="checkbox" name="plays" value="maich">
                 Маичкин
               </label>
               <label class="subfildset__item" >
-                <input type="checkbox" name="plays" value="alias">
+                <input class="input__checkbox" type="checkbox" name="plays" value="alias">
                 Alias
               </label>
           </fieldset>
           <fieldset class="subfildset">
             <legend class="subfildset__title">Дополнительно</legend>
               <label class="subfildset__item" >
-                <input type="checkbox" name="addition" value="car">
+                <input class="input__checkbox" type="checkbox" name="addition" value="car">
                 Караоке
               </label>
               <label class="subfildset__item" >
-                <input type="checkbox" name="addition" value="VR">
+                <input class="input__checkbox" type="checkbox" name="addition" value="VR">
                 VR
               </label>
           </fieldset>
         </fieldset>
-        
+
         <fieldset class="fildset fildset__custom ">
           <legend class="fildset__title">Выбери время и дату</legend>
           <div class="custom__wrapp">
             <div class="custom__wrapp_inner">
-              <label class="custom__item custom__item_small" for="date"></label>
-                <input class="custom__input custom__input_small" lang="en" type="date" name="date" id="date" required>
-             
-              <label class="custom__item" for="time"></label>
-                <input class="custom__input custom__input_small" type="time" name="time"id="time" required>
-              </div>  
-              <label class="custom__item custom__item_nam" for="num"></label>
+                <input class="custom__input custom__input_small" type="date" name="date" id="date" required/>
+                <input class="custom__input custom__input_small" type="time" name="time" id="time" required/>
+            </div>  
                 <input class="custom__input custom__input_nam" type="number" name="nam" placeholder="Сколько человек" id="num" required>
             </div>  
-              <div class="custom__wrapp">
-                <label class="custom__item" for="name">Имя</label>
-                  
-                <input class="custom__input" type="text" name="name" id="name" required>
-                
-                <label class="custom__item" for="surname">Фамилия</label>
-                  
-                <input class="custom__input" type="text" name="surname" id="surname" required>
-              </div>
-              <div class="custom__wrapp"> 
-                <label class="custom__item" for="phone">Телефон</label>
-                  
-                <input class="custom__input" type="number" name="phone" id="phone" required>
-                
-                <label class="custom__item" for="email">E-mail</label>
-                  
-                <input class="custom__input" type="email" name="email" id="email" required>
-            </div> 
+            <div class="custom__wrapp custom__wrapp_brief">
+              <label class="custom__item">Имя
+                <input class="custom__input" type="text" name="name"required>
+              </label>
+              
+              <label class="custom__item">Фамилия
+                <input class="custom__input" type="text" name="surname"required>
+              </label>
+            </div>
+            <div class="custom__wrapp"> 
+                <label class="custom__item">Телефон
+                 <input class="custom__input" type="number" name="phone" required> 
+                </label>
+                <label class="custom__item">E-mail
+                  <input class="custom__input" type="email" name="email" required>
+                </label>
+            </div>
+  
         </fieldset>
           <div class="form-button__wrap">
             <button class="button book__button">Забронировать</button> 
@@ -298,7 +296,7 @@
       </ul>
     </div>
   </section>
-  <section class="section contacts" id="reviews">
+  <section class="section contacts" id="contacts">
     <div class="container contacts__container">
       <h2 class="section__title">контакты</h2>
       <div class="contacts__sides">

@@ -4,6 +4,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  gap: 97px;
   align-items: center;
 }
 .menu {
@@ -21,10 +22,12 @@
 .header__button {
   width: 280px;
   height: 55px;
+  background-color: transparent;
   border: 3px solid #CD06FF;
   border-radius: 10px;
   font-weight: 700;
   font-size: 22px;
   line-height: 136%;
   text-transform: uppercase;
+  color: #ffffff;
 }
