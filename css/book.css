@@ -9,16 +9,14 @@
   border: none;
 }
 .fildset__pleasure,
-.fildset__custom {
+.fildset__custom{
   max-width: 980px;
   margin: 0 auto;
   margin-bottom: 40px;
 
 }
-.fieldset__custom {
+.fildset__custom {
   column-gap: 30px;
-  margin-bottom: 40px;
-
 }
 
 .fildset__title {
