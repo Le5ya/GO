@@ -2,11 +2,6 @@
   background-color: #440F51;
   padding-top: 80px;
 }
-.form {
-  max-width: 1156px;
-  height: 100%;
-  margin: 0;
-}
 
 .fildset {
   display: flex;
@@ -17,6 +12,7 @@
 .fildset__custom {
   max-width: 980px;
   margin: 0 auto;
+  margin-bottom: 40px;
 
 }
 .fieldset__custom {
@@ -127,7 +123,6 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
-  margin-bottom: 16px;
   padding: 0 20px;
   max-width: 100%;
   
@@ -154,7 +149,6 @@
   display: flex;
   justify-content: end;
   max-width: 980px;
-  padding: 10px;
   margin: 0 auto;
 }
 
