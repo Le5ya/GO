@@ -19,7 +19,29 @@
   position: absolute;
   left: calc(50% - 47px);
   bottom: 90px;
+  border: none;
   z-index: 20;
+}
+.down-arrow:focus {
+  border: 1px solid #6C0287;
+}
+.link__img {
+  fill: none;
+  stroke: #fff
+}
+.link__img:hover {
+  fill: #fff;
+  stroke: #6C0287;
+}
+.link__img:focus {
+  fill: none;
+  stroke: #fff;
+  
+
+}
+.link__img:active {
+  fill:  #fff;
+  stroke: #6C0287;
 }
 
 
@@ -85,3 +107,13 @@ color: #CD06FF;
   border: none;
   cursor: pointer;
 }
+.hero__button:hover {
+  background: #840AA3; 
+}
+.hero__button:focus {
+  background: #840AA3; 
+}
+.hero__button:focus {
+  background: #640AA3; 
+}
+
