@@ -47,6 +47,9 @@ li:last-child {
 blockquote {
   margin: 0;  
 }
+input {
+  outline: none;
+}
 
 .container {
   max-width: 1240px;

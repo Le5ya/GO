@@ -180,6 +180,7 @@
 .custom__item {
   font-size: 14px;
   line-height: 22px;
+
 }
 
 .book__button {
@@ -199,12 +200,13 @@
   border: 3px solid #6C0287;
 }
 .book__button:focus {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 3px solid #6C0287;
 }
 .book__button:active {
   background: #EADEED;
   border-radius: 10px;
+  border: none;
 }
 .form-button__wrap {
   display: flex;
