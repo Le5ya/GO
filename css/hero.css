@@ -23,29 +23,56 @@
   z-index: 20;
   transition: 0.5s ease;
   transition-property: border;
+  /* transition-timing-function: linear; */
 }
 
 .link__img {
-  background-image: url("../img/down.svg");
+  fill: none;
+  stroke: #fff;
   transition: 1s ease;
-  transition-property: background-image, border;
+  transition-property: fill, stroke, border;
+}
+.rect {
+  transition: 1s ease;
+  fill: #fff;
+  transition-property: fill;
 }
 
 .link__img:hover {
   transition-duration: 1s;
-  background-image: url("../img/down-hover.svg");
+  stroke: #6C0287;
+  fill: #fff;
+}
+.rect:hover {
+  transition-duration: 0.5s;
+  fill: #420452;
 }
 
 .down-arrow:focus {
   transition-duration: 1s;
-  background-image: url("../img/down.svg");
   border: 1px solid #6C0287;
 }
 
 .link__img:active {
   transition-duration: 1s;
-  background-image: url("../img/down-active.svg");
+  fill:  #6C0287;
+  stroke: #fff;
+  border: none;
 }
+.circle {
+  transition: 1s ease;
+  transition-property: stroke;
+}
+.circle:active {
+  transition-duration: 1s;
+  stroke: #6C0287
+}
+
+.down-arrow:active {
+  transition-duration: 1s;
+  border: none;
+}
+
 
 .hero__title {
   font-weight: 900;
