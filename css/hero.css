@@ -23,7 +23,6 @@
   z-index: 20;
   transition: 0.5s ease;
   transition-property: border;
-  /* transition-timing-function: linear; */
 }
 
 .link__img {
