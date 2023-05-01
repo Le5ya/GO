@@ -26,6 +26,7 @@
   background-image: url("../img/open-purple.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .questions__item_color_purple:after {
   background-image: url("../img/open.svg");

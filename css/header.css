@@ -19,6 +19,15 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.menu__item:hover {
+  color: #6C0287;
+ }
+.menu__item:focus {
+  color: #0f12b3;
+ }
+.menu__item:active {
+  color: #026387;
+ }
 .header__button {
   padding: 13px 28px;
   background-color: transparent;

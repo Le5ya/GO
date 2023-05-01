@@ -26,15 +26,17 @@
   color: #fff;
 }
 
-.social__link:hover {
-  background: #EADEED;
+.social__img:hover {
+  fill: #EADEED;
 }
-.social__link:focus {
-  background: #EADEED;
+.social__link:focus { 
   border: 1px solid #CD06FF;
 }
-.social__link:active {
-  background: #CD06FF;
+.social__img:focus {
+  fill:#EADEED;
+}
+.social__img:active {
+  fill: #CD06FF;
 }
 .adress {
   display: block;
