@@ -27,9 +27,16 @@
   fill: none;
   stroke: #fff
 }
+.rect {
+  fill: #fff
+}
+
 .link__img:hover {
   fill: #fff;
   stroke: #6C0287;
+}
+.rect:hover {
+  fill: #6C0287;
 }
 
 .down-arrow:focus {
