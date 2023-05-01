@@ -26,9 +26,6 @@
   display: inline-block;
   margin-right: 26px;
 }
-.social__item:nth-child(3) {
-  margin-right: 40px;
-}
 .social__item:last-child {
   margin-right: 0;
 }
