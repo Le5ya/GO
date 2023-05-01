@@ -26,52 +26,26 @@
 }
 
 .link__img {
-  fill: none;
-  stroke: #fff;
+  background-image: url("../img/down.svg");
   transition: 1s ease;
-  transition-property: fill, stroke, border;
-}
-.rect {
-  transition: 1s ease;
-  fill: #fff;
-  transition-property: fill;
+  transition-property: background-image, border;
 }
 
 .link__img:hover {
   transition-duration: 1s;
-  stroke: #6C0287;
-  fill: #fff;
-}
-.rect:hover {
-  transition-duration: 0.5s;
-  fill: #420452;
+  background-image: url("../img/down-hover.svg");
 }
 
 .down-arrow:focus {
   transition-duration: 1s;
+  background-image: url("../img/down.svg");
   border: 1px solid #6C0287;
 }
 
 .link__img:active {
   transition-duration: 1s;
-  fill:  #6C0287;
-  stroke: #fff;
-  border: none;
+  background-image: url("../img/down-active.svg");
 }
-.circle {
-  transition: 1s ease;
-  transition-property: stroke;
-}
-.circle:active {
-  transition-duration: 1s;
-  stroke: #6C0287
-}
-
-.down-arrow:active {
-  transition-duration: 1s;
-  border: none;
-}
-
 
 .hero__title {
   font-weight: 900;
