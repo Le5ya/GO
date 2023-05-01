@@ -16,8 +16,11 @@
   min-height: 349px;
   margin-bottom: 15px;
   margin-right: 15px;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  overflow: hidden;
+  cursor: pointer;
 }
+
 .hall:nth-child(2n) {
   float: right;
   margin-right: 0;
@@ -25,10 +28,17 @@
 .hall:nth-child(n +3) {
   margin-bottom: 0;
 } 
+
 .hall__img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 1s ease;
+}
+.hall__img:hover {
+  transition-duration: 1s;
+  transform: scale(110%);
+  
 }
 .hall__name {
   position: absolute;

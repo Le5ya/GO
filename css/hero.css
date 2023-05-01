@@ -21,38 +21,55 @@
   bottom: 90px;
   border: none;
   z-index: 20;
+  transition: 0.5s ease;
+  transition-property: border;
+  /* transition-timing-function: linear; */
 }
 
 .link__img {
   fill: none;
-  stroke: #fff
+  stroke: #fff;
+  transition: 1s ease;
+  transition-property: fill, stroke, border;
 }
 .rect {
-  fill: #fff
+  transition: 1s ease;
+  fill: #fff;
+  transition-property: fill;
 }
 
 .link__img:hover {
-  fill: #fff;
+  transition-duration: 1s;
   stroke: #6C0287;
+  fill: #fff;
 }
 .rect:hover {
-  fill: #6C0287;
+  transition-duration: 0.5s;
+  fill: #420452;
 }
 
 .down-arrow:focus {
+  transition-duration: 1s;
   border: 1px solid #6C0287;
 }
 
 .link__img:active {
+  transition-duration: 1s;
   fill:  #6C0287;
   stroke: #fff;
   border: none;
 }
+.circle {
+  transition: 1s ease;
+  transition-property: stroke;
+}
 .circle:active {
+  transition-duration: 1s;
   stroke: #6C0287
 }
 
 .down-arrow:active {
+  transition-duration: 1s;
   border: none;
 }
 
@@ -118,6 +135,8 @@ color: #CD06FF;
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background;
 }
 .hero__button:hover {
   background: #840AA3; 
