@@ -10,19 +10,23 @@
   flex-wrap: wrap;
   row-gap: 40px;
   column-gap: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .device {
   position: relative;
   transition: 0.5s ease;
   /* overflow: hidden; */
+  transition: 0.5s ease;
   cursor: pointer;
 }
 .device__img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: 0.5s ease;
   
 }
-.device__img:hover {
+.device:hover {
   transform: scale(110%);
 }
 .device__title {
