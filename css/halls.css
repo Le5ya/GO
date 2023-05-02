@@ -34,13 +34,9 @@
   max-width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 1s ease;
+
 }
-.hall__img:hover {
-  transition-duration: 1s;
-  transform: scale(110%);
-  z-index: 1;  
-}
+
 .hall__name {
   position: absolute;
   max-width: 210px;

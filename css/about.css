@@ -6,13 +6,9 @@
   margin-right: 75px;
 }
 .about__block_hover {
-  transition: 0.5s ease;
   cursor: pointer;
 }
-.about__block_hover:hover {
-  transition-duration: 0.5s;
-  transform: scale(110%);
-}
+
 .about__info {
   width: 500px;
   min-height: 222px;
@@ -78,12 +74,7 @@
   margin-right: 30px;
   object-fit: cover;
   object-position: top;
-  transition: 0.5s ease;
   cursor: pointer; 
-}
-.creator__photo:hover {
-  transition-duration: 0.5s;
-  transform: scale(110%);
 }
 
 .creator__cite {

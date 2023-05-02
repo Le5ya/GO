@@ -117,11 +117,4 @@
 .map__side {
   overflow: hidden;
 }
-.map__image {
-  transition: 0.5s ease;
-  cursor: pointer;
-}
-.map__image:hover {
-  transition-duration: 0.5s;
-  transform: scale(110%);
-} 
+
