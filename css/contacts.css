@@ -6,12 +6,25 @@
   justify-content: space-between;
   gap: 60px;
 }
+.adress__text {
+  transition: 0.5s ease;
+  transition-property: color;
+}
+.adress__text:hover {
+  transition-duration: 0.5s;
+  color: #cc99d8;
+}
+.adress__text:focus {
+  transition-duration: 0.5s;
+  color: #6163eb;
+ }
+ .adress__text:active {
+  transition-duration: 0.5s;
+  color: #026387;
+ }
 .social__item {
   display: inline-block;
   margin-right: 26px;
-}
-.social__item:nth-child(3) {
-  margin-right: 40px;
 }
 .social__item:last-child {
   margin-right: 0;
@@ -22,19 +35,27 @@
   width: 50px;
   height: 50px;
   outline: 1px solid transparent;
-  outline-offset: 3px;
+  /* outline-offset: 3px; */
   color: #fff;
+  transition: 0.5s ease;
+  transition-property: border, fill;
 }
 
-.social__link:hover {
-  background: #EADEED;
+.social__img:hover {
+  transition-duration: 0.5s;
+  fill: #EADEED;
 }
 .social__link:focus {
-  background: #EADEED;
-  border: 1px solid #CD06FF;
+  transition-duration: 0.5s; 
+  outline: 1px solid #CD06FF;
 }
-.social__link:active {
-  background: #CD06FF;
+.social__img:focus {
+  transition-duration: 0.5s;
+  fill:#EADEED;
+}
+.social__img:active {
+  transition-duration: 0.5s;
+  fill: #CD06FF;
 }
 .adress {
   display: block;
@@ -92,4 +113,15 @@
 
  .adress__mail:before {
   background-image: url('../img/envelope.svg');
+}
+.map__side {
+  overflow: hidden;
+}
+.map__image {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.map__image:hover {
+  transition-duration: 0.5s;
+  transform: scale(110%);
 } 

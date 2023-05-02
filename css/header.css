@@ -18,26 +18,47 @@
   line-height: 227%px;
   text-transform: uppercase;
   color: #FFFFFF;
+  transition: 0.5s ease;
+  transition-property: color;
 }
+.menu__item:hover {
+  transition-duration: 0.5s;
+  color: #cc99d8;
+ }
+.menu__item:focus {
+  transition-duration: 0.5s;
+  color: #6163eb;
+ }
+.menu__item:active {
+  transition-duration: 0.5s;
+  color: #026387;
+ }
 .header__button {
   padding: 13px 28px;
   background-color: transparent;
-  border: 3px solid #CD06FF;
   border-radius: 10px;
   font-weight: 700;
   font-size: 22px;
   line-height: 136%;
   text-transform: uppercase;
   color: #ffffff;
+  border: 3px solid #CD06FF;
+  transition-duration: 0.5s;
+  transition-property: background-color, border, padding;
+
 }
 .header__button:hover {
-  background: #6C0287;
+  transition-duration: 1s;
+  background-color: #6C0287;
   border: 3px solid #6C0287;
 }
 .header__button:focus {
-  background: #6C0287;
+  transition-duration: 1s;
+  background-color: #6C0287;
+  border: 3px solid transparent;
 }
 .header__button:active {
-  background: #640AA3;
-  border: 1px solid #000000;
+  transition-duration: 1s;
+  background-color: #640AA3;
+  border: 3px solid transparent;
 }

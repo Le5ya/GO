@@ -21,33 +21,62 @@
   bottom: 90px;
   border: none;
   z-index: 20;
+  transition: 0.5s ease;
+  transition-property: border;
+  border: 1px solid transparent;
+  /* transition-timing-function: linear; */
 }
+
+.link__img {
+  fill: none;
+  stroke: #fff;
+  transition: 1s ease;
+  transition-property: fill, stroke, border;
+}F
+
 .down-arrow:focus {
+  transition-duration: 0.5s;
   border: 1px solid #6C0287;
 }
 .down-arrow:active {
-  border: none;
+  transition-duration: 1s;
+  border: 1px solid transparent;
 }
-.link__img {
-  fill: none;
-  stroke: #fff
-}
+
 .link__img:hover {
-  fill: #fff;
+  transition-duration: 1s;
   stroke: #6C0287;
+  fill: #fff;
 }
-
-
+.link__img:focus {
+  transition-duration: 0.5s;
+  fill: none;
+  stroke: #fff;
+}
 
 .link__img:active {
+  transition-duration: 1s;
   fill:  #6C0287;
   stroke: #fff;
-  border: none;
+
 }
-.circle:active {
+.circle {
+  transition: 1s ease;
+  transition-property: stroke;
+}
+ .circle:active {
+  transition-duration: 1s;
   stroke: #6C0287
 }
-
+.link__img:hover > .rect {
+  fill: #6C0287;
+}
+.link__img:focus > .rect {
+  fill: #6C0287;
+}
+.link__img:active > .rect {
+  fill: #fff;
+}
 
 .hero__title {
   font-weight: 900;
@@ -110,6 +139,8 @@ color: #CD06FF;
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: background;
 }
 .hero__button:hover {
   background: #840AA3; 

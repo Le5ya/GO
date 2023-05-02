@@ -26,20 +26,29 @@
   background-image: url("../img/open-purple.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
+  
 }
 .questions__item_color_purple:after {
   background-image: url("../img/open.svg");
+  transition-duration: 0.5s;
+  transition: 0.5s ease;
+  transition-property: background-image;
 }
 .questions__item:hover:after {
+  transition-duration: 0.5s;
   background-image: url("../img/open-purple_h.svg");
 }
 .questions__item:active:after {
+  transition-duration: 0.5s;
   background-image: url("../img/close-purple.svg");
 }
 .questions__item_color_purple:hover:after {
+  transition-duration: 0.5s;
   background-image: url("../img/open-hover.svg");
 }
 .questions__item_color_purple:active:after {
+  transition-duration: 0.5s;
   background-image: url("../img/close.svg");
 }
 
