@@ -32,7 +32,7 @@
   stroke: #fff;
   transition: 1s ease;
   transition-property: fill, stroke, border;
-}
+}F
 
 .down-arrow:focus {
   transition-duration: 0.5s;
@@ -67,10 +67,16 @@
  .circle:active {
   transition-duration: 1s;
   stroke: #6C0287
-} 
-
-
-
+}
+.link__img:hover > .rect {
+  fill: #6C0287;
+}
+.link__img:focus > .rect {
+  fill: #6C0287;
+}
+.link__img:active > .rect {
+  fill: #fff;
+}
 
 .hero__title {
   font-weight: 900;

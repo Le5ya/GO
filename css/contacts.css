@@ -35,7 +35,7 @@
   width: 50px;
   height: 50px;
   outline: 1px solid transparent;
-  outline-offset: 3px;
+  /* outline-offset: 3px; */
   color: #fff;
   transition: 0.5s ease;
   transition-property: border, fill;
@@ -47,7 +47,7 @@
 }
 .social__link:focus {
   transition-duration: 0.5s; 
-  border: 1px solid #CD06FF;
+  outline: 1px solid #CD06FF;
 }
 .social__img:focus {
   transition-duration: 0.5s;
