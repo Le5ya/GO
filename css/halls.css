@@ -16,7 +16,10 @@
   min-height: 349px;
   margin-bottom: 15px;
   margin-right: 15px;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  overflow: hidden;
+  
+   
 }
 .hall:nth-child(2n) {
   float: right;
@@ -30,6 +33,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 .hall__name {
   position: absolute;
   max-width: 210px;

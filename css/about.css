@@ -1,9 +1,16 @@
 .about__block {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: top; 
 }
 .about__block:not(:last-child) {
   margin-right: 75px;
+}
+.about__block_hover {
+  transition: 0.5s ease;
+}
+.about__block_hover:hover {
+  transition-duration: 0.5s;
+  transform: scale(110%);
 }
 .about__info {
   width: 500px;
