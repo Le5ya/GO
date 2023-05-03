@@ -103,15 +103,15 @@
   
 }
 
- .adress__loc:before {
+ .adress__item_loc:before {
   background-image: url('../img/location.svg');
 }
 
-.adress__tel:before {
+.adress__item_tel:before {
   background-image: url('../img/phone.svg');
 }
 
- .adress__mail:before {
+ .adress__item_mail:before {
   background-image: url('../img/envelope.svg');
 }
 .map {
