@@ -4,7 +4,19 @@ html {
 }
 * {
   box-sizing: inherit;
+  --white:#fff;
+  --light-purple: #CD06FF;
+  --purple: #6C0287;
+  --midi-purple: #640AA3;
+  --link-hover:  #cc99d8;
+  --link-focus: #6163eb;
+  --link-active: #026387;
+  --but-light: #840AA3;
+  --but-dark: #640AA3;
+  --dark-purple:#440F51;
+  
 }
+
 
 body { 
   min-width: 320px;
