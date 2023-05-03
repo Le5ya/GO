@@ -25,7 +25,7 @@
   flex-wrap: wrap;
   row-gap: var(--row-gap);
 }
-.wrapper__part_2 {
+.wrapper__part:nth-child(odd) {
   align-self: flex-end;
 }
 .device {
