@@ -14,7 +14,7 @@
   height: 762px;
   z-index: 10;
 }
-.down-arrow {
+.hero__link {
   display: block;
   position: absolute;
   left: calc(50% - 47px);
@@ -34,11 +34,11 @@
   transition-property: fill, stroke, border;
 }
 
-.down-arrow:focus {
+.hero__link:focus {
   transition-duration: 0.5s;
   border: 1px solid var(--purple);
 }
-.down-arrow:active {
+.hero__link:active {
   transition-duration: 1s;
   border: 1px solid transparent;
 }
@@ -60,21 +60,21 @@
   stroke: var(--white);
 
 }
-.circle {
+.img__circle {
   transition: 1s ease;
   transition-property: stroke;
 }
- .circle:active {
+ .img__circle:active {
   transition-duration: 1s;
   stroke: var(--purple)
 }
-.link__img:hover > .rect {
+.link__img:hover > .img__rect {
   fill: var(--purple);
 }
-.link__img:focus > .rect {
+.link__img:focus > .img__rect {
   fill: var(--purple);
 }
-.link__img:active > .rect {
+.link__img:active > .img__rect {
   fill: var(--white);
 }
 
@@ -106,18 +106,18 @@
 .reclame__card:not(:last-child) {
   margin-right: 40px;
 }
-.card__purple_high {
+.card__num {
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
   color: var(--light-purple);
 }
-.card__purple_low {
+.card__word {
   font-weight: 900;
-font-size: 75px;
-line-height: 106px;
-font-variant: all-small-caps;
-color: var(--light-purple);
+  font-size: 75px;
+  line-height: 106px;
+  font-variant: all-small-caps;
+  color: var(--light-purple);
 }
 
 .card__text {

@@ -8,14 +8,14 @@
   justify-content: space-between;
   border: none;
 }
-.fildset__pleasure,
-.fildset__custom{
+.pleasure,
+.custom{
   max-width: 980px;
   margin: 0 auto;
   margin-bottom: 40px;
 
 }
-.fildset__custom {
+.custom {
   column-gap: 30px;
 }
 
@@ -30,7 +30,7 @@
   position: relative;
   align-content: center;
 }
-.input__radio {
+.subfildset__radio {
   position: relative;
   width: 27px;
   height: 27px;
@@ -39,14 +39,14 @@
   margin-right: 12px;
   cursor: pointer;
 }
-.input__radio:focus:before {
+.subfildset__radio:focus:before {
   content: '';
   position: absolute;
   width: 27px;
   height: 27px;
   border: 1px solid var(--light-purple);
 }
-.input__radio:focus:after {
+.subfildset__radio:focus:after {
   content: '';
   position: absolute;
   width: 27px;
@@ -55,7 +55,7 @@
   background: var(--white);
 }
 
-.input__checkbox {
+.subfildset__checkbox {
   position: relative;
   width: 25px;
   height: 25px;
@@ -64,7 +64,7 @@
   margin-right: 12px;
   cursor: pointer;
 }
-.input__checkbox:focus:after{
+.subfildset__checkbox:focus:after{
   content: '';
   position: absolute;
   width: 25px;
@@ -73,9 +73,7 @@
   background-color: var(--white);
 }
 
-
-
-.hall__lable {
+.hall-pick__lable {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -95,29 +93,29 @@
   transition-property: background-color, border, color;
 }
 
-.hall__lable:hover {
+.hall-pick__lable:hover {
   transition-duration: 0.5s;
   background-color: var(--gray);
   border: 3px solid #640AA3;
 }
-.hall__lable:hover {
+.hall-pick__lable:hover {
   transition-duration: 0.5s;
   background-color: var(--gray);
   border: 3px solid #640AA3;
 }
-.hall__lable:focus {
+.hall-pick__lable:focus {
   transition-duration: 0.5s;
   background-color: var(--white);
   border: 3px solid #640AA3;
 }
-.hall__lable:active {
+.hall-pick__lable:active {
   transition-duration: 0.5s;
   background-color: var(--purple);
   border: 3px solid var(--white);
   color: var(--white);
 }
 
-.hall__input {
+.hall-pick__input {
   display: none;
 }
 .subfildset {
@@ -143,11 +141,11 @@
   line-height: 25px;
   
 }
-.fildset__halls {
+.hall-pick {
   margin-bottom: 57px;
 }
 
-.fildset__pleasure {
+.pleasure {
   margin-bottom: 60px;
 }
 
@@ -165,7 +163,7 @@
 .custom__wrapp_brief {
   max-width: 280px;
 }
-.custom__wrapp_inner {
+.wrapp__inner {
   display: flex;
   justify-content: space-between;
   gap: 10px;

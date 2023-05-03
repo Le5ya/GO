@@ -114,7 +114,7 @@
  .adress__mail:before {
   background-image: url('../img/envelope.svg');
 }
-.map__side {
+.map {
   overflow: hidden;
 }
 
