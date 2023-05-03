@@ -1,0 +1,47 @@
+.header {
+  --white:#fff;
+  --light-purple: #CD06FF;
+  --purple: #6C0287;
+  --midi-purple: #640AA3;
+  --link-hover:  #cc99d8;
+  --link-focus: #6163eb;
+  --link-active: #026387;
+}
+.hero {
+  --white:#fff;
+  --purple: #6C0287;
+  --light-purple: #CD06FF;
+  --but-light: #840AA3;
+  --but-dark: #640AA3;
+}
+.book {
+  --dark-purple:#440F51;
+  --light-purple: #CD06FF;
+  --black:  #000;
+  --white:#fff;
+  --gray: #EADEED;
+  --purple: #6C0287;
+}
+.questions {
+  --dark-purple:  #440F51;
+  --white:#fff;
+  --red-gray: #1C1A1A;
+  --dark-purple: #440F51;
+}
+.review {
+  --white:#fff;
+}
+.contacts {
+  --dark-purple:#CD06FF;
+  --grad-one: #1b1a1b;
+  --grad-twq:#370A37;
+  --gray: #EADEED;
+  --link-focus: #6163eb;
+  --link-active: #026387;
+  --white:#fff;
+
+}
+body {
+  --white:#fff;
+  --body: #1b1b1b;
+}

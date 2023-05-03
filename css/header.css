@@ -17,21 +17,21 @@
   font-size: 22px;
   line-height: 227%px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--white);
   transition: 0.5s ease;
   transition-property: color;
 }
 .menu__item:hover {
   transition-duration: 0.5s;
-  color: #cc99d8;
+  color:  var(--link-hover);
  }
 .menu__item:focus {
   transition-duration: 0.5s;
-  color: #6163eb;
+  color:  var(--link-focus);
  }
 .menu__item:active {
   transition-duration: 0.5s;
-  color: #026387;
+  color:  var(--link-active);
  }
 .header__button {
   padding: 13px 28px;
@@ -41,24 +41,24 @@
   font-size: 22px;
   line-height: 136%;
   text-transform: uppercase;
-  color: #ffffff;
-  border: 3px solid #CD06FF;
+  color: var(--white);
+  border: 3px solid var(--light-purple);
   transition-duration: 0.5s;
   transition-property: background-color, border, padding;
 
 }
 .header__button:hover {
   transition-duration: 1s;
-  background-color: #6C0287;
-  border: 3px solid #6C0287;
+  background-color: var(--purple);
+  border: 3px solid var(--purple);
 }
 .header__button:focus {
   transition-duration: 1s;
-  background-color: #6C0287;
+  background-color: var(--purple);
   border: 3px solid transparent;
 }
 .header__button:active {
   transition-duration: 1s;
-  background-color: #640AA3;
+  background-color: var(--midi-purple);
   border: 3px solid transparent;
 }

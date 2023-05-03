@@ -1,5 +1,5 @@
 .contacts {
-  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  background: linear-gradient(180deg, var(--grad-one) 0%, var(--grad-twq) 100%);
 }
 .contacts__sides {
   display: flex;
@@ -12,15 +12,15 @@
 }
 .adress__text:hover {
   transition-duration: 0.5s;
-  color: #cc99d8;
+  color: var(--link-hover);
 }
 .adress__text:focus {
   transition-duration: 0.5s;
-  color: #6163eb;
+  color: var(--link-focus);
  }
  .adress__text:active {
   transition-duration: 0.5s;
-  color: #026387;
+  color: var(--link-active);
  }
 .social__item {
   display: inline-block;
@@ -36,26 +36,26 @@
   height: 50px;
   outline: 1px solid transparent;
   /* outline-offset: 3px; */
-  color: #fff;
+  color: var(--white);
   transition: 0.5s ease;
   transition-property: border, fill;
 }
 
 .social__img:hover {
   transition-duration: 0.5s;
-  fill: #EADEED;
+  fill: var(--gray);
 }
 .social__link:focus {
   transition-duration: 0.5s; 
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--dark-purple);
 }
 .social__img:focus {
   transition-duration: 0.5s;
-  fill:#EADEED;
+  fill:var(--gray);
 }
 .social__img:active {
   transition-duration: 0.5s;
-  fill: #CD06FF;
+  fill: var(--dark-purple);
 }
 .adress {
   display: block;

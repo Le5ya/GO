@@ -1,5 +1,5 @@
 .book {
-  background-color: #440F51;
+  background-color: var(--dark-purple);
   padding-top: 80px;
 }
 
@@ -44,7 +44,7 @@
   position: absolute;
   width: 27px;
   height: 27px;
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--light-purple);
 }
 .input__radio:focus:after {
   content: '';
@@ -52,7 +52,7 @@
   width: 27px;
   height: 27px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--white);
 }
 
 .input__checkbox {
@@ -69,8 +69,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 1px solid #CD06FF;
-  background-color: #fff;
+  border: 1px solid var(--light-purple);
+  background-color: var(--white);
 }
 
 
@@ -84,8 +84,8 @@
   line-height: 133%;
   justify-content: center;
   text-transform: uppercase;
-  color: #000;
-  background-color: #fff;
+  color: var(--black);
+  background-color: var(--white);
   min-width: 250px;
   padding: 8px 15px;
   border-radius: 8px;
@@ -97,24 +97,24 @@
 
 .hall__lable:hover {
   transition-duration: 0.5s;
-  background-color: #EADEED;
+  background-color: var(--gray);
   border: 3px solid #640AA3;
 }
 .hall__lable:hover {
   transition-duration: 0.5s;
-  background-color: #EADEED;
+  background-color: var(--gray);
   border: 3px solid #640AA3;
 }
 .hall__lable:focus {
   transition-duration: 0.5s;
-  background-color: #FFFFFF;
+  background-color: var(--white);
   border: 3px solid #640AA3;
 }
 .hall__lable:active {
   transition-duration: 0.5s;
-  background-color: #6C0287;
-  border: 3px solid #FFFFFF;
-  color: #fff;
+  background-color: var(--purple);
+  border: 3px solid var(--white);
+  color: var(--white);
 }
 
 .hall__input {
@@ -184,8 +184,8 @@
   cursor: pointer;
 }
 .custom__input:focus {
-  background: #fff;
-  border: 2px solid #CD06FF;
+  background: var(--white);
+  border: 2px solid var(--light-purple);
 }
 
 .custom__item {
@@ -195,7 +195,7 @@
 }
 
 .book__button {
-  background: #FFFFFF;
+  background: var(--white);
   border-radius: 10px;
   width: 300px;
   height: 60px;
@@ -203,24 +203,24 @@
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--purple);
   border: none;
   transition: 0.5s ease;
   transition-property: background-color, border, color;
 }
 .book__button:hover {
   transition-duration: 0.5s;
-  background-color: #EADEED;
-  border: 3px solid #6C0287;
+  background-color: var(--gray);
+  border: 3px solid var(--purple);
 }
 .book__button:focus {
   transition-duration: 0.5s;
-  background-color: #ffffff;
-  border: 3px solid #6C0287;
+  background-color: var(--white);
+  border: 3px solid var(--purple);
 }
 .book__button:active {
   transition-duration: 0.5s;
-  background-color: #EADEED;
+  background-color: var(--gray);
   border-radius: 10px;
   border: transparent;
 }

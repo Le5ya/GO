@@ -24,19 +24,19 @@
   transition: 0.5s ease;
   transition-property: border;
   border: 1px solid transparent;
-  /* transition-timing-function: linear; */
+
 }
 
 .link__img {
   fill: none;
-  stroke: #fff;
+  stroke: var(--white);
   transition: 1s ease;
   transition-property: fill, stroke, border;
-}F
+}
 
 .down-arrow:focus {
   transition-duration: 0.5s;
-  border: 1px solid #6C0287;
+  border: 1px solid var(--purple);
 }
 .down-arrow:active {
   transition-duration: 1s;
@@ -45,19 +45,19 @@
 
 .link__img:hover {
   transition-duration: 1s;
-  stroke: #6C0287;
-  fill: #fff;
+  stroke: var(--purple);
+  fill: var(--white);
 }
 .link__img:focus {
   transition-duration: 0.5s;
   fill: none;
-  stroke: #fff;
+  stroke: var(--white);
 }
 
 .link__img:active {
   transition-duration: 1s;
-  fill:  #6C0287;
-  stroke: #fff;
+  fill:  var(--purple);
+  stroke: var(--white);
 
 }
 .circle {
@@ -66,16 +66,16 @@
 }
  .circle:active {
   transition-duration: 1s;
-  stroke: #6C0287
+  stroke: var(--purple)
 }
 .link__img:hover > .rect {
-  fill: #6C0287;
+  fill: var(--purple);
 }
 .link__img:focus > .rect {
-  fill: #6C0287;
+  fill: var(--purple);
 }
 .link__img:active > .rect {
-  fill: #fff;
+  fill: var(--white);
 }
 
 .hero__title {
@@ -110,14 +110,14 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
-  color: #CD06FF;
+  color: var(--light-purple);
 }
 .card__purple_low {
   font-weight: 900;
 font-size: 75px;
 line-height: 106px;
 font-variant: all-small-caps;
-color: #CD06FF;
+color: var(--light-purple);
 }
 
 .card__text {
@@ -125,7 +125,7 @@ color: #CD06FF;
   font-size: 30px;
   line-height: 34px;
   text-align: center;
-  color: #FFFFFF;
+  color: var(--white);
   max-width: 209px;
 }
 .hero__button {
@@ -134,8 +134,8 @@ color: #CD06FF;
   font-size: 26px;
   line-height: 115%;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background: #6C0287;
+  color: var(--white);
+  background: var(--purple);
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -143,12 +143,12 @@ color: #CD06FF;
   transition-property: background;
 }
 .hero__button:hover {
-  background: #840AA3; 
+  background: var(--but-light); 
 }
 .hero__button:focus {
-  background: #840AA3; 
+  background: var(--but-light); 
 }
-.hero__button:focus {
-  background: #640AA3; 
+.hero__button:active {
+  background: var(--but-dark); 
 }
 
