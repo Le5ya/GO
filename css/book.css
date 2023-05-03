@@ -73,7 +73,7 @@
   background-color: var(--white);
 }
 
-.hall-pick__lable {
+.halls__lable {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -93,29 +93,29 @@
   transition-property: background-color, border, color;
 }
 
-.hall-pick__lable:hover {
+.halls__lable:hover {
   transition-duration: 0.5s;
   background-color: var(--gray);
   border: 3px solid #640AA3;
 }
-.hall-pick__lable:hover {
+.halls__lable:hover {
   transition-duration: 0.5s;
   background-color: var(--gray);
   border: 3px solid #640AA3;
 }
-.hall-pick__lable:focus {
+.halls__lable:focus {
   transition-duration: 0.5s;
   background-color: var(--white);
   border: 3px solid #640AA3;
 }
-.hall-pick__lable:active {
+.halls__lable:active {
   transition-duration: 0.5s;
   background-color: var(--purple);
   border: 3px solid var(--white);
   color: var(--white);
 }
 
-.hall-pick__input {
+.halls__input {
   display: none;
 }
 .subfildset {
@@ -141,7 +141,7 @@
   line-height: 25px;
   
 }
-.hall-pick {
+.halls {
   margin-bottom: 57px;
 }
 
@@ -192,7 +192,7 @@
 
 }
 
-.book__button {
+.form__button {
   background: var(--white);
   border-radius: 10px;
   width: 300px;
@@ -206,23 +206,23 @@
   transition: 0.5s ease;
   transition-property: background-color, border, color;
 }
-.book__button:hover {
+.form__button:hover {
   transition-duration: 0.5s;
   background-color: var(--gray);
   border: 3px solid var(--purple);
 }
-.book__button:focus {
+.form__button:focus {
   transition-duration: 0.5s;
   background-color: var(--white);
   border: 3px solid var(--purple);
 }
-.book__button:active {
+.form__button:active {
   transition-duration: 0.5s;
   background-color: var(--gray);
   border-radius: 10px;
   border: transparent;
 }
-.form-button__wrap {
+.form__wrap {
   display: flex;
   justify-content: end;
   max-width: 980px;
