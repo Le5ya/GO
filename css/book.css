@@ -192,7 +192,7 @@
 
 }
 
-.form__button {
+.wrap__button {
   background: var(--white);
   border-radius: 10px;
   width: 300px;
@@ -206,23 +206,23 @@
   transition: 0.5s ease;
   transition-property: background-color, border, color;
 }
-.form__button:hover {
+.wrap__button:hover {
   transition-duration: 0.5s;
   background-color: var(--gray);
   border: 3px solid var(--purple);
 }
-.form__button:focus {
+.wrap__button:focus {
   transition-duration: 0.5s;
   background-color: var(--white);
   border: 3px solid var(--purple);
 }
-.form__button:active {
+.wrap__button:active {
   transition-duration: 0.5s;
   background-color: var(--gray);
   border-radius: 10px;
   border: transparent;
 }
-.form__wrap {
+.wrap {
   display: flex;
   justify-content: end;
   max-width: 980px;
