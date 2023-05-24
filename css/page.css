@@ -1,0 +1,91 @@
+main  {
+	padding: 50px 0;
+	margin-bottom: ;
+}
+.bunner {
+	padding: 120px 0;
+	height: 750px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-position-y: 0;
+}
+.bunner__name {
+	position: absolute;
+	top: calc(50%);
+	left: calc(50% - 300px);
+	font-weight: 700;
+font-size: 90px;
+line-height: 80px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.bunner_star-wars {
+background-image: url('../img/star-wars-bunner.jpg');
+}
+.bunner_vibes {
+	background-image: url('../img/vibes-bunner.jpg');
+}
+.bunner_wild-west {
+	background-image: url('../img/wild-west-bunner.jpg');
+}
+.bunner_neon {
+	background-image: url('../img/neon-bunner.jpg');
+}
+
+.page__annotation {
+
+	font-weight: 700;
+font-size: 24px;
+line-height: 150%;
+text-align: center;
+max-width: 1000px;
+max-height: 108px;
+margin: 0 auto;
+
+}
+.room {
+	padding: 50px 0;
+}
+
+.page__descript {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.page__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 80px;
+}
+.text__part:not(:last-child) {
+	margin-bottom: 29px;
+}
+.rooms__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+}
+.room__image {
+	position: relative;
+}
+.room__name {
+	 position: absolute;
+  max-width: 170px;
+  top: calc(50% - 36px);
+  left: calc(50% - 80px);
+  font-family: 'Arial';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+	}
+	.room__name_short {
+		top: calc(50% - 18px);
+	}
