@@ -7,21 +7,26 @@
   clear: both;
 }
 
-.hall {
-  position: relative; 
+.halls-list {
+  display: grid;
+  width: 100%;
+  min-height: 713px;
+  grid-template-columns: repeat(2, 49%);
+  grid-template-rows: repeat(2, 49%);
+  gap: 15px; 
   /*display: inline-block;
   vertical-align: top; - 1 вариант*/
-  float: left;
+  /*float: left;
   width: 580px;
   min-height: 349px;
   margin-bottom: 15px;
   margin-right: 15px;
   background-repeat: no-repeat;
-  /* overflow: hidden; */
-  cursor: pointer;
+  overflow: hidden; 
+  cursor: pointer;*/
 }
 
-.hall:nth-child(2n) {
+/*.hall:nth-child(2n) {
   float: right;
   margin-right: 0;
 } 
@@ -35,6 +40,9 @@
   height: 100%;
   object-fit: cover;
 
+}*/
+.hall {
+position: relative;
 }
 
 .hall__name {
