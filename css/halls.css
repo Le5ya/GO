@@ -13,7 +13,7 @@
   min-height: 713px;
   grid-template-columns: repeat(2, 49%);
   grid-template-rows: repeat(2, 49%);
-  gap: 15px; 
+  gap: 1.5%; 
   /*display: inline-block;
   vertical-align: top; - 1 вариант*/
   /*float: left;
@@ -57,4 +57,24 @@ position: relative;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
+}
+
+@media (max-width: 904px){
+ 
+  .halls-list {
+  display: grid;
+  width: 100%;
+  min-height: 417px;
+  grid-template-columns: repeat(2, 49%);
+  grid-template-rows: repeat(2, 49%);
+  gap: 1.5%; 
+  }
+  .hall__name {
+  position: absolute;
+  max-width: 120px;
+  top: calc(50% - 50px);
+  left: calc(50% - 60px);
+  font-size: 40px;
+  line-height: 50px;
+}
 }

@@ -228,6 +228,26 @@
   max-width: 980px;
   margin: 0 auto;
 }
+@media (max-width: 1040px ){
+.halls__lable {
+  gap: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  min-width: 180px;
+}
+.custom__wrapp {
+  display: flex;
+  flex-basis: 254px;
+  flex-direction: column;
+  row-gap: 10px;
+  max-width: 254px;
+}
+.wrap__button {
+  width: 254px;
+  font-size: 18px;
+  line-height: 133%;
+}
+}
 
 
 

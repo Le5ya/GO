@@ -161,8 +161,75 @@ margin: 0 auto;
 	}
 	@media(max-width: 768px) {
 		.page__img {
-			width: 329px;
+			max-width: 329px;
 			height: 326px;
+			margin-right: 0;
 		}
+	}
+	@media(max-width: 450px) {
+		.bunner {
+		max-width: 320px;
+		height: 168px;
+		margin: 0 auto;
+		}
+		.bunner__name {
+			font-size: 30px;
+			line-height: 120%;
+			top: calc(25%);
+			left: calc(25%);
+
+		}
+		.section__title {
+		font-size: 14px;
+		line-height: 18px;
+		max-width: 280px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		}
+		.page__annotation {
+			width: 280px;
+			height: 168px;
+			font-size: 16px;
+			line-height: 150%;
+			margin-bottom: 30px;
+}
+	.section__title {
+		font-size: 14px;
+		line-height: 18px;
+		width: 100%;
+}
+.room {
+	padding: 50px 0;
+}
+
+.page__descript {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.page__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+
+.page__text {
+	font-size: 12px;
+line-height: 133%;
+max-width: 280px;
+padding: 20px;
+margin: 0 auto;
+border: 1px solid red;
+
+}
+.page__img {
+	height: 180px;
+}
+.rooms__list {
+	grid-template-columns: 1fr;
+	width: 100%;
+}
 	}
 
