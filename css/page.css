@@ -1,26 +1,44 @@
-main  {
-	padding: 50px 0;
-	margin-bottom: ;
+.back {
+	position: relative;
+	display: block;
+	padding-top: 50px;
+	padding-left: 36px;
+} 
+
+.back:before {
+	position: absolute;
+  content: '';
+  background-image: url('../img/back.svg');
+  background-repeat: no-repeat;
+  left: 0;
+  top: 50px;
+  width: 31px;
+  height: 16px;
+	color: var(--white);
 }
+.page__section {
+	padding-top: 0;
+} 
+
 .bunner {
-	padding: 120px 0;
+	/*padding: 120px 0;*/
 	height: 750px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: center;
-	background-position-y: 0;
+	background-position-x: center;
+	background-position-y: 20px;
 }
 .bunner__name {
 	position: absolute;
 	top: calc(50%);
 	left: calc(50% - 300px);
 	font-weight: 700;
-font-size: 90px;
-line-height: 80px;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
+	font-size: 90px;
+	line-height: 80px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--white);
 }
 .bunner_star-wars {
 background-image: url('../img/star-wars-bunner.jpg');
@@ -83,9 +101,68 @@ margin: 0 auto;
   font-size: 30px;
   line-height: 120%;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
 	}
 	.room__name_short {
 		top: calc(50% - 18px);
 	}
+	@media(max-width: 1024px) {
+		.back {
+	position: relative;
+	display: block;
+	font-size: 16px;
+	line-height: 175%;
+/* identical to box height, or 175% */
+} 
+
+.back:before {
+  left: 0;
+  top: 55px;
+}
+.page__section {
+	padding-top: 0;
+} 
+
+.bunner {
+	/*padding: 120px 0;*/
+	height: 534px;
+	background-position-y: 20px;
+}
+.bunner__name {
+	top: calc(50% - 25px);
+	left: calc(50% - 170px);
+}
+
+.page__annotation {
+	font-size: 20px;
+	max-width: 800px;
+	max-height: 108px;
+
+
+}
+
+.page__descript {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.page__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+.text__part:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+	}
+	@media(max-width: 768px) {
+		.page__img {
+			width: 329px;
+			height: 326px;
+		}
+	}
+
