@@ -26,6 +26,9 @@
 .about__blockquote {
   display: flow-root;
 }
+.about__blockquote_laptop {
+display: none;
+}
 
 
 .about__quote {
@@ -88,51 +91,95 @@
   display: inline-block;
 }
 @media (max-width: 1024px) {
-  .about__block {
-    width: 46.5%;
-    height: 417px;
-}
-.about__block:not(:last-child) {
-  margin-right: 58px;
-}
-.about__text {
-  font-size: 18px;
-  line-height: 24px;
+    .about__block {
+      width: 46.5%;
+      height: 417px;
+  }
+  .about__block:not(:last-child) {
+    margin-right: 58px;
+  }
+  .about__text {
+    font-size: 18px;
+    line-height: 24px;
+    
+  }
+  .about__quote {
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 20px;
   
+    
+  }
+  .creator {
+    float: right;
+    right: 100px;
+    bottom: 0;
+    align-items: center;
+  }
+  .creator__photo {
+    display: inline-block;
+    max-width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-right: 30px;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer; 
+  }
+
+  .creator__cite {
+    max-width: 225px;
+    min-height: 78px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
-.about__quote {
-  padding-left: 20px;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 120%;
-  margin-bottom: 20px;
- 
+@media (max-width: 904px) {
+    .about__block {
+      width: 46.5%;
+      height: 417px;
+  }
+  .about__block:not(:last-child) {
+    margin-right: 58px;
+  }
+  .about__text {
+    font-size: 18px;
+    line-height: 24px;
+    
+  }
+  .about__quote {
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 20px;
   
-}
-.creator {
-  float: right;
-  right: 100px;
-  bottom: 0;
-  align-items: center;
-}
-.creator__photo {
-  display: inline-block;
-  max-width: 70px;
-  height: 70px;
-  border-radius: 100%;
-  margin-right: 30px;
-  object-fit: cover;
-  object-position: top;
-  cursor: pointer; 
+    
+  }
+  .creator {
+    float: right;
+    right: 100px;
+    bottom: 0;
+    align-items: center;
+  }
+  .creator__photo {
+    display: inline-block;
+    max-width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-right: 30px;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer; 
+  }
+
+  .creator__cite {
+    max-width: 225px;
+    min-height: 78px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
-.creator__cite {
-  max-width: 225px;
-  min-height: 78px;
-  padding-right: 30px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  display: inline-block;
-}
-}*/

@@ -157,20 +157,20 @@
           <fieldset class="subfildset">
             <legend class="subfildset__title">Приставка</legend>
             <label class="subfildset__item" >
-              <input class="subfildset__lable" type="radio" name="console" value="white">
+              <input class="subfildset__radio" type="radio" name="console" value="white">
               Play STation
             </label>
             <label class="subfildset__item">
-              <input class="subfildset__lable" type="radio" name="console"  value="sega">
+              <input class="subfildset__radio" type="radio" name="console" value="sega">
               
               Sega Mega Drive
             </label>
             <label class="subfildset__item">
-              <input class="subfildset__lable" type="radio" name="console"  value="x-box">
+              <input class="subfildset__radio" type="radio" name="console" value="x-box">
               X-box One 
             </label>
             <label class="subfildset__item" >
-              <input class="subfildset__lable" type="radio" name="console"  value="dendy">
+              <input class="subfildset__radio" type="radio" name="console" value="dendy">
               Dendy
             </label>
           </fieldset>
@@ -209,30 +209,32 @@
 
         <fieldset class="fildset custom">
           <legend class="fildset__title">Выбери время и дату</legend>
-          <div class="wrapp custom__wrapp">
+          <div class="wrapp custom__wrapp custom__wrapp_detais">
             <div class="wrapp__inner">
                 <input class="custom__input custom__input_small" type="date" name="date" id="date" required/>
                 <input class="custom__input custom__input_small" type="time" name="time" id="time" required/>
             </div>  
-                <input class="custom__input custom__input_nam" type="number" name="nam" placeholder="Сколько человек" id="num" required>
-            </div> 
-            <div class="custom__wrapp custom__wrapp_brief">
-              <label class="custom__item">Имя
-                <input class="custom__input" type="text" name="name"required>
-              </label>
-              
-              <label class="custom__item">Фамилия
-                <input class="custom__input" type="text" name="surname"required>
-              </label>
+            <input class="custom__input custom__input_nam" type="number" name="nam" placeholder="Сколько человек" id="num" required>
             </div>
-            <div class="custom__wrapp"> 
+            <!--<div class="custom__wrapper">-->
+              <div class="custom__wrapp custom__wrapp_brief">
+                <label class="custom__item">Имя
+                  <input class="custom__input" type="text" name="name" required>
+                  </label>
+              
+                <label class="custom__item">Фамилия
+                  <input class="custom__input" type="text" name="surname" required>
+                  </label>
+                  </div>
+                  <div class="custom__wrapp custom__wrapp_long">
                 <label class="custom__item">Телефон
-                 <input class="custom__input" type="number" name="phone" required> 
+                  <input class="custom__input" type="number" name="phone" required>
                 </label>
                 <label class="custom__item">E-mail
                   <input class="custom__input" type="email" name="email" required>
                 </label>
-            </div>
+              </div>
+            <!--</div>-->
   
         </fieldset>
         <div class="wrap">
@@ -249,14 +251,15 @@
         <p class="about__text">Для наших гостей мы создали<i>концептуально новое игровое пространство  виртуальной реальности в центральной части города.</i></p>
       
         <p class="about__text">Каждый раз мы стараемся создавать для&nbsp;вас&nbsp;самую&nbsp;лучшую игровую атмосферу и радовать вас топовыми игровыми разработками со&nbsp;всего мира.</p> 
-        <blockquote class="blockquote about__blockquote">
-          <p class="about__quote">GAME OVER -- 
-            это место незабываемых впечатлений.</p>
-          <div class="creator">
-              <img src="img/creator.jpg" class="creator__photo" alt="Аркадий Абакшин">
-            <p class="creator__cite"><cite>Аркадий Абакшин, создатель первой территории GAME OVER</cite></p>
-          </div>
-        </blockquote>
+    
+      <blockquote class="blockquote about__blockquote">
+        <p class="about__quote">GAME OVER --
+          это место незабываемых впечатлений.</p>
+        <div class="creator">
+          <img src="img/creator.jpg" class="creator__photo" alt="Аркадий Абакшин">
+          <p class="creator__cite"><cite>Аркадий Абакшин, создатель первой территории GAME OVER</cite></p>
+        </div>
+      </blockquote>
       </div>
     </div>
   </section>
