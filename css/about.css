@@ -26,9 +26,7 @@
 .about__blockquote {
   display: flow-root;
 }
-.about__blockquote_laptop {
-display: none;
-}
+
 
 
 .about__quote {
@@ -137,16 +135,21 @@ display: none;
   }
 }
 @media (max-width: 904px) {
-    .about__block {
-      width: 46.5%;
-      height: 417px;
+  .about__block {
+      height: 70%;
+      flow: left;
   }
   .about__block:not(:last-child) {
-    margin-right: 58px;
+    margin-right: 50px;
   }
+  .about__blockquote {
+    display: block;
+    width: 688px;
+  }
+
   .about__text {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
     
   }
   .about__quote {

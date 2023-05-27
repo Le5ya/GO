@@ -30,10 +30,15 @@
   
 }
 .questions__item_color_purple:after {
-  background-image: url("../img/open.svg");
-  transition-duration: 0.5s;
-  transition: 0.5s ease;
-  transition-property: background-image;
+  content: "";
+  display: block;
+  float: right;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/open-purple.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 .questions__item:hover:after {
   transition-duration: 0.5s;
@@ -50,5 +55,83 @@
 .questions__item_color_purple:active:after {
   transition-duration: 0.5s;
   background-image: url("../img/close.svg");
+}
+
+.questions__item {
+  background-color: var(--white);
+  color: var(--red-gray);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 30px 70px;
+  margin-bottom: 16px;
+}
+
+.questions__item_color_purple {
+  background-color: var(--dark-purple);
+  color: var(--white);
+}
+
+.questions__item:after {
+  content: "";
+  display: block;
+  float: right;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/open-purple.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  
+}
+.questions__item_color_purple:after {
+   content: "";
+  display: block;
+  float: right;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/open.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media (max-width: 904px) {
+  .questions {
+  min-width: 100%;
+}
+
+.questions__item {
+  position: relative;
+  background-color: var(--white);
+  color: var(--red-gray);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 30px 70px;
+ 
+  margin-bottom: 10px;
+}
+
+.questions__item_color_purple {
+  background-color: var(--dark-purple);
+  color: var(--white);
+}
+
+.questions__item:after {
+  position: absolute;
+  content: "";
+  display: block;
+  right: 70px;
+  bottom: 25%;
+  float: right;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/open-purple.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  
+}
 }
 
