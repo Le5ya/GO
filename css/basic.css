@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4,p, figure, fieldset {
+h1, h2, h3, h4,p, figure, fieldset img {
   padding: 0;
   margin: 0;
 }
@@ -55,7 +55,7 @@ input {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 30px;
-  border: 1px solid red;
+  
 }
 
 .section {
@@ -96,7 +96,6 @@ input {
    .container {
     max-width: 290px;
     padding: 0 15px;
-    border: 1px solid red;
   }
   .section__title {
   font-size: 14px;

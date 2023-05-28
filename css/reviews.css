@@ -89,7 +89,6 @@
     text-align: center;
   }
   .review__text {
-    vertical-align: top;
     padding-top: 30px;
     font-weight: 400;
     font-size: 18px;
@@ -122,5 +121,49 @@
     line-height: 22px;
     min-width: 393px;
     max-height: 94px;
+  }
+}
+@media (max-width: 450px) {
+    .review__wrapper {
+      position: relative;
+      min-height: 150px;
+      padding: 0;
+}
+    
+    .review__person {
+      width: 100%;
+      min-height: 100px;
+      margin-right: 0;
+      text-align: center;
+  
+  }
+    .clearfix { 
+      clear: left;
+     }
+    .review__img {
+      width: 86px;
+      height: 86px;
+      left: 34%;
+  }
+    .review__photo {
+      width: 86px;
+      height: 86px;
+      margin-bottom: 10px;
+     
+  }
+   .review__sign {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .review__text {
+    display: block;
+    padding-top: 0;
+    font-size: 12px;
+    line-height: 133%;
+    min-width: 100%;
+    /*min-height: 100px;*/
+
   }
 }
