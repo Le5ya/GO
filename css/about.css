@@ -1,18 +1,23 @@
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
 .about__block {
   max-width: 49%;
+  height: 418px;
   display: inline-block;
   vertical-align: top;
 } 
-.about__block:not(:last-child) {
+/*.about__block:not(:last-child) {
   margin-right: 75px;
-}
+}*/
 .about__block_hover {
   cursor: pointer;
 }
 
 .about__info {
-  width: 500px;
-  min-height: 222px;
+  max-width: 500px;
 } 
 .about__text {
   font-size: 20px;
@@ -94,7 +99,7 @@
       height: 417px;
   }
  
-  .about__text {
+  .about__texts {
     font-size: 18px;
     line-height: 24px;
     
@@ -134,12 +139,57 @@
   
 }
 @media (max-width: 904px) {
+  .about {
+    padding-bottom: 256px;
+  }
   .about__wrapper {
-    display: grid;
-    grid-template-columns: 50% 47%;
-    column-gap: 20px;
-    grid-template-rows: 380px 184px;
-    row-gap: 20px;
+    position: relative;
+  }
+  .about__blockquote {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .about__quote {
+    max-width: 600px;;
+    max-height: 90px;
+  }
+ .about__block {
+    max-width: 400px;
+    height: 382px;
+    object-fit: cover;
+  }
+   .about__block img{ 
+    object-fit: cover;
+    min-height: 100% ; 
+  }
+    .about__info {
+    font-size: 16px;
+    line-height: 16px;  
+  } 
+  .about__text:first-child {
+    padding-top: 70px;
+   
+  }
+  .about__text:first-child {
+    padding-top: 30px;
+   
+  }
+  .about__text:nth-child(2) {
+    padding-bottom: 30px;
+   
+  }
+   .about__text {
+    max-width: 350px;
+    
+  }
+
+}
+
+
+  
+  /*.about__wrapper  {
+    max-width: 688px;
   }
   .about__block {
       display: block;
@@ -160,14 +210,6 @@
      display: grid;
     font-size: 16px;
     line-height: 22px;
-    max-width: 320px;
-    max-height: 340px;
-    padding: 0 40px;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    align-items: center;
-    margin-bottom: 0;
-    padding-left: 0;
     
   } 
 
@@ -209,9 +251,10 @@
     min-height: 78px;
     font-size: 18px;
     line-height: 24px;
-  }
+  }*/
 }
-@media (max-width: 450px) {
+
+/*@media (max-width: 450px) {
     .about__wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -221,7 +264,7 @@
      .about__block {
       grid-row:  2 / 3;
       max-width: 100%;
-}
+  }
   .about__info {
     grid-row: 1 / 2;
     grid-column: 1px / 2px;
@@ -232,5 +275,5 @@
     grid-row: 3 / 4;
     width: 100%;
   }
-}
+}*/
 
