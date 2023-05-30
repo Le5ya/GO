@@ -181,16 +181,11 @@
   margin-bottom: 50px;
 }
 .card__num {
-  
   font-size: 50px;
   line-height: 71px;
   
 }
-.card__text {
-  font-size: 16px;
-  line-height: 18px;
-  max-width: 103px;
-}
+
 .card__word {
   font-size: 40px;
   line-height: 56px;
@@ -212,5 +207,62 @@
 .hero__link {
   display: none;
 }
+}
+@media (max-width: 450px) {
+  .hero{
+    padding-bottom: 0;
+  }
+  .hero__container {
+  position: relative;
+  min-height: 220px;  
+}
+  .hero__title {
+    font-size: 35px;
+    line-height: 100%;
+  }
+  .hero__subtitle {
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 10px;
+    margin-bottom: 0
+  }
+  .hero__container:after {
+  position: absolute;
+  content: '';
+  background-image: url('../img/bunner-2.png');
+  background-repeat: no-repeat;
+  left: 140px;
+  top: 25px;
+  width: 200px;
+  height: 200px;
+  z-index: 10;
+}
+.card__word {
+  font-size: 22px;
+  line-height: 31px;
+}
+.card__num {
+  font-size: 26px;
+  line-height: 37px;
+}
+  .card__text {
+    font-size: 10px;
+    line-height: 11px;
+    
+  }
+  .reclame {
+
+  margin-bottom: 50px;
+  }
+  .reclame__card:not(:last-child) {
+    margin-right: 20px;
+  }
+  .hero__button {
+
+    padding: 8px 13px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
 }
 

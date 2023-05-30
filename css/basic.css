@@ -55,6 +55,7 @@ input {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 30px;
+ 
   
 }
 
@@ -73,6 +74,7 @@ input {
     .container {
     max-width: 964px;
     padding: 0 30px;
+   
   }
   .section__title {
   font-size: 30px;
@@ -93,13 +95,17 @@ input {
 }
 }
 @media (max-width: 450px) {
+  .section {
+    max-width: 100%;
+  }
    .container {
-    max-width: 290px;
-    padding: 0 15px;
+    max-width: 320px;
+    padding: 0 20px;
   }
   .section__title {
   font-size: 14px;
-  zline-height: 18px;
+  line-height: 18px;
+  width: 100%;
  
 }
 

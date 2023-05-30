@@ -3,9 +3,11 @@
   padding-top: 80px;
 }
 
-.fildset {
+.fieldset {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
   border: none;
 }
 .pleasure,
@@ -19,18 +21,18 @@
   column-gap: 30px;
 }
 
-.fildset__title {
+.fieldset__title {
   text-align: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
   margin-bottom: 40px;
 }
-.subfildset__item {
+.subfieldset__item {
   position: relative;
   align-content: center;
 }
-.subfildset__radio {
+.subfieldset__radio {
   position: relative;
   width: 27px;
   height: 27px;
@@ -39,14 +41,14 @@
   margin-right: 12px;
   cursor: pointer;
 }
-.subfildset__radio:focus:before {
+.subfieldset__radio:focus:before {
   content: '';
   position: absolute;
   width: 27px;
   height: 27px;
   border: 1px solid var(--light-purple);
 }
-.subfildset__radio:focus:after {
+.subfieldset__radio:focus:after {
   content: '';
   position: absolute;
   width: 27px;
@@ -55,7 +57,7 @@
   background: var(--white);
 }
 
-.subfildset__checkbox {
+.subfieldset__checkbox {
   position: relative;
   width: 25px;
   height: 25px;
@@ -64,7 +66,7 @@
   margin-right: 12px;
   cursor: pointer;
 }
-.subfildset__checkbox:focus:after{
+.subfieldset__checkbox:focus:after{
   content: '';
   position: absolute;
   width: 25px;
@@ -118,7 +120,7 @@
 .halls__input {
   display: none;
 }
-.subfildset {
+.subfieldset {
  display: flex;
  flex-direction: column;
  flex-wrap: nowrap;
@@ -126,7 +128,7 @@
  padding: 0;
  border: none;
 }
-.subfildset__title {
+.subfieldset__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
@@ -134,14 +136,14 @@
 
 }
 
-.subfildset__item {
+.subfieldset__item {
   display: block;
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
   
 }
-.halls {
+.halls-fieldset {
   margin-bottom: 57px;
 }
 
@@ -230,7 +232,6 @@
 }
 @media (max-width: 1040px ){
 .halls__lable {
-  gap: 10px;
   font-size: 20px;
   line-height: 24px;
   min-width: 180px;
@@ -249,13 +250,15 @@
 }
 }
 @media (max-width: 904px) {
+  .halls-fieldset {
+    gap: 10px;
+  }
   .halls__lable {
-  gap: 10px;
   font-size: 16px;
   line-height: 125%;
   min-width: 150px;
-  padding: 8px 10px;
 }
+.halls-fieldset,
 .pleasure,
 .custom{
   max-width: 688px;
@@ -274,7 +277,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 42px;
-    column-gap: 106px;
+    column-gap: 12%;
   }
   
   .custom__wrapp_brief {
@@ -290,29 +293,126 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    column-gap: 106px;
+    column-gap: 15%;
     grid-row:  1/ 2;
     grid-column: 1 / 3;
 
   }
   .custom__input_nam {
-    max-width: 300px;
-    font-size: 18px;
-    line-height: 28px;
-    
+    max-width: 254px;
   }
+  
   .custom__input_nam:placeholder {
     font-size: 18px;
     line-height: 28px;
   }
   .wrapp__inner {
-    max-width: 282px;
+    max-width: 250px;
     padding-top: 0;
     margin-bottom: 0;
+    colunm-gap: 4%;
   }
   .wrap {
   max-width: 620px;
   
 }
+  
+}
+@media (max-width: 613px) {
+    .halls,
+    .pleasure,
+    .custom{
+      max-width: 280px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+
+  }
+  .fieldset__title {
+    font-size: 22px;
+    line-height: 117%;
+    margin-bottom: 40px;
+  }
+
+  .halls__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 74px;
+  }
+  .halls__lable {
+    min-width: 120px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5;
+   
+    
+  }
+  .halls__input {
+    padding: 0;
+    
+  }
+
+  .custom__wrapp_brief,
+  .custom__wrapp_long {
+    max-width: 100%;
+    max-height: 100px;
+  }
+  .custom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  .custom__wrapp_detais {
+    display: flex;
+    flex-direction: column;
+    max-height: 120px;
+    max-width: 100%;
+    
+    }
+ 
+  .custom__input {
+    height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+  }
+  .custom__input_nam {
+      max-width: 250px;
+      font-size: 14px;
+      line-height: 18px;
+      
+    }
+
+  .custom__input_nam:placeholder {
+    font-size: 14px;
+    line-height: 16px;
+   
+  }
+  .wrapp__inner {
+    max-width: 250px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .custom__wrapp_brief .custom__item,
+  .custom__wrapp_long .custom__item {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+   {
+
+  }
+  .wrap {
+    max-width: 280px;
+    padding: 0 30px;
+  }
+  .wrap__button {
+    max-width: 220px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 26px;
+
+
+  }
   
 }

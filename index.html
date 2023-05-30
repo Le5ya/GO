@@ -40,7 +40,7 @@
             аппаратура</p>
         </div>
       </div>
-      <button class="hero__button">Забронировать</button>
+      <button class="button hero__button">Забронировать</button>
       <a class="link hero__link " 
        onclick="return false"
       href="#">
@@ -68,7 +68,7 @@
             <figcaption class="device__title">Настольные игры</figcaption>
           </figure>
         </div>
-
+  
         <div class="part wrapper__part">
           <figure class="device">
             <img class="device__img" src="img/dev-img-5.jpg" alt="">
@@ -80,7 +80,7 @@
             <figcaption class="device__title">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
           </figure>
         </div>
-
+  
         <div class="part wrapper__part">
           <figure class="device">
             <img class="device__img" src="img/dev-img-2.jpg" alt="">
@@ -91,7 +91,7 @@
             <figcaption class="device__title">РlаyStаtiоn 5</figcaption>
           </figure>
         </div>
-
+  
       </div>
     </div>
   </section>
@@ -133,89 +133,91 @@
         id="book_up"
         action="https://jsonplaceholder.typicode.com/posts"
         method="POST">
-        <fieldset class="fildset halls">
-          <legend class="fildset__title">Выбери зал</legend>
-            <label class="lable halls__lable">
-              <input class="input halls__input"  type="radio" name="hall" value="80'S VIBES">
-              80's vibes
-            </label>
-            <label class="lable halls__lable">
-              <input class="input halls__input"  type="radio" name="hall" value="STAR WARS">
-              star wars
-            </label>
-            <label  class="lable halls__lable">
-              <input class="input halls__input" type="radio" name="hall" value="WILD WEST">
-              wild west
-            </label>
-            <label  class="lable halls__lable">
-              <input class="input halls__input" type="radio" name="hall" value="NEON STYLE">
-              neon style
-            </label>
+        <fieldset class="fieldset halls-fieldset">
+          <legend class="fieldset__title">Выбери зал</legend>
+          <!--<div class="halls__wrapper">-->
+          <label class="lable halls__lable">
+                <input class="input halls__input" type="radio" name="hall" value="80'S VIBES">
+                80's vibes
+                </label>
+                <label class="lable halls__lable">
+                <input class="input halls__input" type="radio" name="hall" value="STAR WARS">
+                star wars
+                </label>
+              <label class="lable halls__lable">
+                <input class="input halls__input" type="radio" name="hall" value="WILD WEST">
+                wild west
+              </label>
+              <label class="lable halls__lable">
+                <input class="input halls__input" type="radio" name="hall" value="NEON STYLE">
+                neon style
+              </label>
+            <!--</div>-->
         </fieldset>
-        <fieldset class="fildset pleasure">
-          <legend class="fildset__title">Собери набор развлечений</legend>
-          <fieldset class="subfildset">
-            <legend class="subfildset__title">Приставка</legend>
-            <label class="subfildset__item" >
-              <input class="subfildset__radio" type="radio" name="console" value="white">
+        <fieldset class="fieldset pleasure">
+          <legend class="fieldset__title">Собери набор развлечений</legend>
+          <fieldset class="subfieldset">
+            <legend class="subfieldset__title">Приставка</legend>
+            <label class="subfieldset__item">
+              <input class="subfieldset__radio" type="radio" name="console" value="white">
               Play STation
             </label>
-            <label class="subfildset__item">
-              <input class="subfildset__radio" type="radio" name="console" value="sega">
+            <label class="subfieldset__item">
+              <input class="subfieldset__radio" type="radio" name="console" value="sega">
               
               Sega Mega Drive
             </label>
-            <label class="subfildset__item">
-              <input class="subfildset__radio" type="radio" name="console" value="x-box">
+            <label class="subfieldset__item">
+              <input class="subfieldset__radio" type="radio" name="console" value="x-box">
               X-box One 
             </label>
-            <label class="subfildset__item" >
-              <input class="subfildset__radio" type="radio" name="console" value="dendy">
+            <label class="subfieldset__item">
+              <input class="subfieldset__radio" type="radio" name="console" value="dendy">
               Dendy
             </label>
           </fieldset>
-          <fieldset class="subfildset">
-              <legend class="subfildset__title">Настольные игры</legend>
+          <fieldset class="subfieldset">
+            <legend class="subfieldset__title">Настольные игры</legend>
     
-              <label class="subfildset__item" >
-                <input class="subfildset__checkbox" type="checkbox" name="plays" value="jenda">
+              <label class="subfieldset__item">
+                <input class="subfieldset__checkbox" type="checkbox" name="plays" value="jenda">
                 Jenda
               </label>
-              <label class="subfildset__item" >
-                <input class="subfildset__checkbox" type="checkbox" name="plays" value="monopoly">
+              <label class="subfieldset__item">
+                <input class="subfieldset__checkbox" type="checkbox" name="plays" value="monopoly">
                 Monopoly
               </label>
-              <label class="subfildset__item" >
-                <input class="subfildset__checkbox" type="checkbox" name="plays" value="maich">
+              <label class="subfieldset__item">
+                <input class="subfieldset__checkbox" type="checkbox" name="plays" value="maich">
                 Маичкин
               </label>
-              <label class="subfildset__item" >
-                <input class="subfildset__checkbox" type="checkbox" name="plays" value="alias">
+              <label class="subfieldset__item">
+                <input class="subfieldset__checkbox" type="checkbox" name="plays" value="alias">
                 Alias
               </label>
           </fieldset>
-          <fieldset class="subfildset">
-            <legend class="subfildset__title">Дополнительно</legend>
-              <label class="subfildset__item" >
-                <input class="subfildset__checkbox" type="checkbox" name="addition" value="car">
+          <fieldset class="subfieldset">
+            <legend class="subfieldset__title">Дополнительно</legend>
+            <label class="subfieldset__item">
+              <input class="subfieldset__checkbox" type="checkbox" name="addition" value="car">
                 Караоке
               </label>
-              <label class="subfildset__item" >
-                <input class="subfildset__checkbox" type="checkbox" name="addition" value="VR">
+              <label class="subfieldset__item">
+                <input class="subfieldset__checkbox" type="checkbox" name="addition" value="VR">
                 VR
               </label>
           </fieldset>
         </fieldset>
 
-        <fieldset class="fildset custom">
-          <legend class="fildset__title">Выбери время и дату</legend>
+        <fieldset class="fieldset custom">
+          <legend class="fieldset__title">Выбери время и дату</legend>
           <div class="wrapp custom__wrapp custom__wrapp_detais">
             <div class="wrapp__inner">
                 <input class="custom__input custom__input_small" type="date" name="date" id="date" required/>
                 <input class="custom__input custom__input_small" type="time" name="time" id="time" required/>
             </div>  
             <input class="custom__input custom__input_nam" type="number" name="nam" placeholder="Сколько человек" id="num" required>
-            </div>
+          </div>
             <!--<div class="custom__wrapper">-->
               <div class="custom__wrapp custom__wrapp_brief">
                 <label class="custom__item">Имя
