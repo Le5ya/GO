@@ -87,6 +87,7 @@ background-image: url('../img/star-wars-bunner.jpg');
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	width: 100%;
+	column-gap 10px;
 }
 .room__image {
 	position: relative;
@@ -166,6 +167,16 @@ background-image: url('../img/star-wars-bunner.jpg');
 			margin-right: 0;
 		}
 	}
+	@media (max-width: 650px) {
+			.page__info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			gap: 20px;
+		}
+	}
+	
 	@media(max-width: 450px) {
 		.bunner {
 			max-width: 320px;
@@ -200,10 +211,6 @@ background-image: url('../img/star-wars-bunner.jpg');
 		}
 
 		.page__info {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: center;
 			gap: 15px;
 		}
 

@@ -20,7 +20,9 @@
         <li class="menu__item"><a href="#reviews">Отзывы</a></li>
         <li class="menu__item"><a href="#contacts">Контакты</a></li>
       </ul>
-      <div class="hamb-line"></div>
+      <button class="hamb-line">
+        <img src="img/menu.svg" alt="menu">
+      </button>
       <button class="button header__button">Заказать звонок</button>
     </div>
   </header>
@@ -218,7 +220,7 @@
             </div>  
             <input class="custom__input custom__input_nam" type="number" name="nam" placeholder="Сколько человек" id="num" required>
           </div>
-            <!--<div class="custom__wrapper">-->
+            <div class="custom__wrapper">
               <div class="custom__wrapp custom__wrapp_brief">
                 <label class="custom__item">Имя
                   <input class="custom__input" type="text" name="name" required>
@@ -236,12 +238,11 @@
                   <input class="custom__input" type="email" name="email" required>
                 </label>
               </div>
-            <!--</div>-->
-  
+            </div>
         </fieldset>
         <div class="wrap">
-          <button class="button wrap__button">Забронировать</button> 
-        </div>  
+          <button class="button wrap__button">Забронировать</button>
+          </div>
       </form>
     </div>  
   </section>
@@ -253,22 +254,30 @@
           <img src="img/about.jpg" alt="" />
         </div>
         <div class="about__info">
-          <p class="about__text">Для наших гостей мы создали<i> концептуально новое игровое пространство виртуальной реальности
-              в центральной части города.</i></p>
-          <p class="about__text">Каждый раз мы стараемся создавать для&nbsp;вас&nbsp;самую&nbsp;лучшую игровую атмосферу и
-            радовать вас топовыми игровыми разработками со&nbsp;всего мира.</p>
-        <!--<div class="about__quot-wrap">-->
-          <blockquote class="blockquote about__blockquote">
-            <p class="about__quote">GAME OVER --
-              это место незабываемых впечатлений.</p>
-            <div class="creator">
-              <img src="img/creator.jpg" class="creator__photo" alt="Аркадий Абакшин">
-              <p class="creator__cite"><cite>Аркадий Абакшин, создатель первой территории GAME OVER</cite></p>
-            </div>
-          </blockquote>
-          <!--</div>-->
+              <p class="about__text">Для наших гостей мы создали<i> концептуально новое игровое пространство виртуальной реальности
+                  в центральной части города.</i></p>
+              <p class="about__text">Каждый раз мы стараемся создавать для&nbsp;вас&nbsp;самую&nbsp;лучшую игровую атмосферу и
+                радовать вас топовыми игровыми разработками со&nbsp;всего мира.</p>
+              <!--<div class="about__quot-wrap">-->
+              <blockquote class="blockquote about__blockquote">
+                <p class="about__quote">GAME OVER --
+                  это место незабываемых впечатлений.</p>
+                <div class="creator">
+                  <img src="img/creator.jpg" class="creator__photo" alt="Аркадий Абакшин">
+                  <p class="creator__cite"><cite>Аркадий Абакшин, создатель первой территории GAME OVER</cite></p>
+                </div>
+              </blockquote>
+              <!--</div>-->
         </div>
       </div>
+      <blockquote class="blockquote about__blockquote about__blockquote_tablet">
+        <p class="about__quote">GAME OVER --
+          это место незабываемых впечатлений.</p>
+        <div class="creator">
+          <img src="img/creator.jpg" class="creator__photo" alt="Аркадий Абакшин">
+          <p class="creator__cite"><cite>Аркадий Абакшин, создатель первой территории GAME OVER</cite></p>
+        </div>
+      </blockquote>
     </div>
   </section>
   <section class="section reviews" id="reviews">
@@ -338,9 +347,9 @@
       <div class="contacts__sides">
         <div class="contacts__side">
           <adress class="adress">
-            <ul>
+            <ul class="adress__list">
               <li class="adress__item adress__item_loc">
-                <a href="#" class="adress__text">г.Москва ул Аквамарина, 16</a>
+                <a href="#" class="adress__text">г.Москва ул Усачёва, 29 k 3</a>
               </li>
               <li class="adress__item adress__item_tel">
                 <a href="tel:+79509302893" class="adress__text">8 (950) 930-28-93</a>

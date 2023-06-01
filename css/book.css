@@ -18,7 +18,13 @@
 
 }
 .custom {
-  column-gap: 30px;
+  column-gap: 20px;
+}
+.custom__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .fieldset__title {
@@ -226,9 +232,10 @@
 }
 .wrap {
   display: flex;
-  justify-content: end;
-  max-width: 980px;
+  justify-content: flex-end;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 90px;
 }
 @media (max-width: 1040px ){
 .halls__lable {
@@ -244,7 +251,7 @@
   max-width: 254px;
 }
 .wrap__button {
-  width: 254px;
+  max-width: 254px;
   font-size: 18px;
   line-height: 133%;
 }
@@ -273,33 +280,23 @@
 
 }
   .custom {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 42px;
-    column-gap: 12%;
-  }
-  
-  .custom__wrapp_brief {
-    grid-row: 2 / 4;
-    grid-column: 1 / 2;
-
-  }
-  .custom__wrapp_long {
-    grid-column: 2 / 3;
-    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
   }
   .custom__wrapp_detais {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    column-gap: 15%;
-    grid-row:  1/ 2;
-    grid-column: 1 / 3;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+    max-height: 56px;
   }
   .custom__input_nam {
     max-width: 254px;
+  }
+  .custom__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
   .custom__input_nam:placeholder {
@@ -313,16 +310,16 @@
     colunm-gap: 4%;
   }
   .wrap {
-  max-width: 620px;
+  max-width: 100%;
   
 }
   
 }
-@media (max-width: 613px) {
-    .halls,
+@media (max-width: 630px) {
+    .halls-fieldset,
     .pleasure,
     .custom{
-      max-width: 280px;
+      width: 280px;
       margin: 0 auto;
       margin-bottom: 40px;
 
@@ -356,12 +353,14 @@
   .custom__wrapp_brief,
   .custom__wrapp_long {
     max-width: 100%;
-    max-height: 100px;
+    max-height: 150px;
+    
   }
   .custom {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
     }
   .custom__wrapp_detais {
     display: flex;
@@ -370,6 +369,11 @@
     max-width: 100%;
     
     }
+    .custom__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
  
   .custom__input {
     height: 40px;
@@ -402,15 +406,22 @@
    {
 
   }
+  .custom__wrapp {
+  flex-basis: 280px;
+  max-width: 280px;
+}
   .wrap {
-    max-width: 280px;
-    padding: 0 30px;
+    max-width: 100%;
+    justify-content: center;
+    padding: 0;
   }
   .wrap__button {
-    max-width: 220px;
+    max-width: 280px;
     height: 40px;
     font-size: 18px;
+    padding: 0 22px;
     line-height: 26px;
+    margin: 0 auto;
 
 
   }

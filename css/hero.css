@@ -208,6 +208,13 @@
   display: none;
 }
 }
+@media (max-width: 644px) {
+  .hero__container:after {
+  background-image: url('../img/bunner-1.png');
+  z-index: -10;
+}
+  
+}
 @media (max-width: 450px) {
   .hero{
     padding-bottom: 0;
@@ -227,10 +234,7 @@
     margin-bottom: 0
   }
   .hero__container:after {
-  position: absolute;
-  content: '';
   background-image: url('../img/bunner-2.png');
-  background-repeat: no-repeat;
   left: 140px;
   top: 25px;
   width: 200px;
