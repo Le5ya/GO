@@ -10,12 +10,9 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header page__header">
 		<div class="container header__container">
-			<img src="img/logo-white.svg" alt="">
-			<label class="hamb" for="menu">
-				<span class="hamb-line"></span>
-			</label>
+      <img src="img/logo-white.svg" alt="">
 			<ul class="menu">
 				<li class="menu__item"><a href="#halls">Залы</a></li>
 				<li class="menu__item"><a href="#about">О нас</a></li>
@@ -23,23 +20,34 @@
 				<li class="menu__item"><a href="#reviews">Отзывы</a></li>
 				<li class="menu__item"><a href="#contacts">Контакты</a></li>
 			</ul>
+      
+      <button class="hamb-line">
+        <img src="img/menu.svg" alt="menu">
+      </button>
 			<button class="button header__button">Заказать звонок</button>
 		</div>
-		<div class="container link__container">
-			<a href="index.html" class="back">Вернуться назад</a>
-		</div>
+		
 	</header>
+  <div class="container link__container">
+    <a href="index.html" class="back">Вернуться назад</a>
+  </div>
 	<main class="page">
-		<section class="section page__section">
-			<div class="bunner bunner_star-wars">
-				<p class="bunner__name">neon style</p>
-			</div>
+		<section class="section page__section page__section_star-wars">
+      <div class="container page__contaner">
+        <div class="bunner bunner">
+          <h1 class="bunner__name">star wars</h1>
+        </div>
+       
+      </div>
 		</section>
-		<p class="annotation page__annotation">
-			Здесь вы встретите атрибуты вселенной STAR WARS. Сможете ощутить себя на тех планетах, где разворачивается история
-			STAR WARS и ощутить себя в роли героев наcтоящей саги.
-		</p>
-
+    <section class="section annotation">
+      <div class="container page__container">
+        <p class="annotation page__annotation">
+          Здесь вы встретите атрибуты вселенной STAR WARS. Сможете ощутить себя на тех планетах, где разворачивается история
+          STAR WARS и ощутить себя в роли героев наcтоящей саги.
+        </p>
+      </div>
+    </section>
 		<section class="section room">
 			<div class="container page__container">
 				<div class="section__title">Что есть в комнате?</div>

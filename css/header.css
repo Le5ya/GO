@@ -70,7 +70,6 @@
       gap: 10px;
     }
     .header__button {
-      padding: 10px 26px;
       font-size: 18px;
       line-height: 24px;
     }
@@ -98,37 +97,14 @@
 .hamb-line {
   display: block;
   background: transparent;
+  order: -1;
 }
-.hamb {
-order: -1;
+
 }
-/*.hamb-line {
-    background: var(--white);
-    display: block;
-    height: 2px;
-    width: 24px;
-    position: relative;
-    order: -1;
-    
- 
-} */
-/*.hamb-line::before,
-.hamb-line::after{
-    background: var(--white);
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    
-}*/
-/*.hamb-line::before{
-    top: 5px;
-}
-.hamb-line::after{
-    top: -5px;
-}*/
+@media (max-width: 704px) {
+ .header__button {
+    display: none;
+  }
 }
 
 @media(max-width: 450px) {

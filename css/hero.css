@@ -141,6 +141,7 @@
   cursor: pointer;
   transition-duration: 0.5s;
   transition-property: background;
+  box-shadow: 0 0 10px var(--purple);
 }
 .hero__button:hover {
   background: var(--but-light); 
@@ -214,6 +215,11 @@
   z-index: -10;
 }
   
+}
+@media (max-width: 407px) {
+  .hero__subtitle {
+    padding-left: 0;
+  }
 }
 @media (max-width: 450px) {
   .hero{

@@ -1,6 +1,3 @@
-.halls {
-  padding-bottom: 100px;
-}
 .halls-list::after {
   content: '';
   display: table;

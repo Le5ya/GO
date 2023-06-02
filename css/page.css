@@ -1,7 +1,9 @@
+.page__container {
+  margin-bottom: 50px;
+}
 .back {
 	position: relative;
 	display: block;
-	padding-top: 50px;
 	padding-left: 36px;
 } 
 
@@ -11,28 +13,30 @@
   background-image: url('../img/back.svg');
   background-repeat: no-repeat;
   left: 0;
-  top: 50px;
+  /* top: 25px; */
   width: 31px;
   height: 16px;
 	color: var(--white);
 }
 .page__section {
-	padding-top: 0;
-} 
-
-.bunner {
-	/*padding: 120px 0;*/
-	height: 750px;
+	/* padding-top: 0; */
+  height: 750px;
 	position: relative;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-position-x: center;
 	background-position-y: 20px;
-}
+
+} 
+
+/* .bunner {
+	
+} */
 .bunner__name {
 	position: absolute;
-	top: calc(50%);
-	left: calc(50% - 300px);
+	top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
 	font-weight: 700;
 	font-size: 90px;
 	line-height: 80px;
@@ -40,21 +44,21 @@
 	text-transform: uppercase;
 	color: var(--white);
 }
-.bunner_star-wars {
-background-image: url('../img/star-wars-bunner.jpg');
+.page__section_star-wars {
+  background-image: url('../img/star-wars-bunner.jpg');
+  
 }
-.bunner_vibes {
+.page__section_vibes {
 	background-image: url('../img/vibes-bunner.jpg');
 }
-.bunner_wild-west {
+.page__section_wild-west {
 	background-image: url('../img/wild-west-bunner.jpg');
 }
-.bunner_neon {
+.page__section_neon {
 	background-image: url('../img/neon-bunner.jpg');
 }
 
 .page__annotation {
-
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 150%;
@@ -62,6 +66,7 @@ background-image: url('../img/star-wars-bunner.jpg');
 	max-width: 1000px;
 	max-height: 108px;
 	margin: 0 auto;
+  top: -1;
 
 }
 .room {
@@ -87,7 +92,7 @@ background-image: url('../img/star-wars-bunner.jpg');
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	width: 100%;
-	column-gap 10px;
+	column-gap: 10px;
 }
 .room__image {
 	position: relative;
@@ -110,10 +115,8 @@ background-image: url('../img/star-wars-bunner.jpg');
 	}
 	@media(max-width: 1024px) {
 		.back {
-	position: relative;
-	display: block;
-	font-size: 16px;
-	line-height: 175%;
+      font-size: 16px;
+      line-height: 175%;
 
 } 
 
