@@ -69,6 +69,9 @@ input {
   text-transform: uppercase;
 }
 @media (max-width: 1040px) {
+  .section {
+    padding: 35px 0;
+  }
     .container {
     max-width: 964px;
     padding: 0 30px;
@@ -81,29 +84,32 @@ input {
 }
 @media (max-width: 904px) {
   .section {
-  padding: 30px 0;
-}
-   .container {
+    padding: 30px 0;
+  }
+  .container {
     max-width: 728px;
     padding: 0 20px;
   }
   .section__title {
-  font-size: 24px;
-  line-height: 36px;
-}
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 @media (max-width: 450px) {
   .section {
-    max-width: 100%;
+    width: 100%;
+    padding: 15px 0;
+
   }
    .container {
     max-width: 320px;
     padding: 0 20px;
   }
   .section__title {
-  font-size: 14px;
-  line-height: 18px;
-  width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    margin-bottom: 15px;
  
 }
 

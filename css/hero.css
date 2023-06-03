@@ -227,7 +227,7 @@
   }
   .hero__container {
   position: relative;
-  min-height: 220px;  
+  min-height: 220px; 
 }
   .hero__title {
     font-size: 35px;
@@ -245,7 +245,6 @@
   top: 25px;
   width: 200px;
   height: 200px;
-  z-index: 10;
 }
 .card__word {
   font-size: 22px;

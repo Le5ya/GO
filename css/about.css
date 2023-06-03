@@ -173,6 +173,8 @@
 @media (max-width: 514px) {
   .about__wrapper {
     grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
   }
   .about__block {
     grid-column: 1 / 2;
@@ -186,7 +188,7 @@
     grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
-  .about__block,
+  
   .about__block img,
   .about__text,
   .about__blockquote {
