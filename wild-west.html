@@ -12,10 +12,7 @@
 <body>
 	<header class="header page__header">
 		<div class="container header__container">
-			<img src="img/logo-white.svg" alt="">
-			<label class="hamb" for="menu">
-				<span class="hamb-line"></span>
-			</label>
+      <img src="img/logo-white.svg" alt="">
 			<ul class="menu">
 				<li class="menu__item"><a href="#halls">Залы</a></li>
 				<li class="menu__item"><a href="#about">О нас</a></li>
@@ -23,6 +20,7 @@
 				<li class="menu__item"><a href="#reviews">Отзывы</a></li>
 				<li class="menu__item"><a href="#contacts">Контакты</a></li>
 			</ul>
+      
       <button class="hamb-line">
         <img src="img/menu.svg" alt="menu">
       </button>
@@ -34,24 +32,27 @@
     <a href="index.html" class="back">Вернуться назад</a>
   </div>
 	<main class="page">
-		<section class="section page__section page__section_wild-west">
-			<div class="bunner bunner">
-				<h1 class="bunner__name">wild west</h1>
+		<section class="section page__section">
+			<div class="bunner bunner_wild-west">
+        <div class="container page__contaner">
+          <h1 class="bunner__name">wild west</h1>
+        </div>
 			</div>
-		</section>
-    <section class="section annotation">
-      <div class="container page__container">
-        <p class="annotation page__annotation">
-          Ох этот замечательный мир «Дикого Запада». Здесь вы сможете примерить на себя ковбойскую шляпу, кожаный жилет,
-          ковбойские сапоги и даже сесть верхом на лошадь. И не важно, вы будете одним из омерзительной восьмерки или
-          отправитесь
-          в путь освобождать Джанго.
-        </p>
+      <div class="annotation">
+        <div class="container page__container">
+          <p class="annotation page__annotation">
+            Ох этот замечательный мир «Дикого Запада». Здесь вы сможете примерить на себя ковбойскую шляпу, кожаный жилет,
+            ковбойские сапоги и даже сесть верхом на лошадь. И не важно, вы будете одним из омерзительной восьмерки или
+            отправитесь
+            в путь освобождать Джанго.
+          </p>
+        </div>
       </div>
-    </section>
-		<section class="section room">
+      
+		</section>
+		<section class="section page__section room">
 				<div class="container page__container">
-				<div class="section__title">Что есть в комнате?</div>
+				<div class="section__title page__title">Что есть в комнате?</div>
 				<div class="info page__info">
 					<img src="img/wild-west-1.jpg" class="img page__img" alt="star-wars" />
 					<div class="text page__text">
@@ -66,9 +67,9 @@
 					</div>
 				</div>
 		</section>
-		<section class="section rooms page__rooms">
+		<section class="section page__section rooms">
 			<div class="container page__container">
-				<div class="section__title">Другие комнаты</div>
+				<div class="section__title page__title">Другие комнаты</div>
 			<ul class="rooms__list">
 				<li class="room rooms__item">
 					<a href="vibes.html" class="room__link">
@@ -99,9 +100,9 @@
 				</div>
 				</section>
 	</main>
-	<section class="section contacts" id="contacts">
+	<section class="section page__section contacts" id="contacts">
 		<div class="container contacts__container">
-			<h2 class="section__title">контакты</h2>
+			<h2 class="section__title page__title">контакты</h2>
 			<div class="contacts__sides">
 				<div class="contacts__side">
 					<adress class="adress">

@@ -45,6 +45,7 @@
   border: 3px solid var(--light-purple);
   transition-duration: 0.5s;
   transition-property: background-color, border, padding;
+  
 
 }
 .header__button:hover {
