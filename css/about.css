@@ -76,7 +76,7 @@
 }
 
 .creator__cite {
-  width: 280px;
+  /* width: 280px; */
   min-height: 84px;
   padding-right: 30px;
   font-weight: 400;
@@ -215,7 +215,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    max-height: 68px;
+    /* max-height: 68px; */
    }
    .creator__cite {
     font-size: 12px;
