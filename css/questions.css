@@ -148,7 +148,7 @@
   .questions__item {
     font-size: 12px;
     line-height: 16px;
-    padding: 15px 25px;
+    padding: 15px 20px;
     margin-bottom: 10px;
   }
   .questions__item_color_purple {
@@ -157,7 +157,6 @@
   }
   .questions__item:after {
     right: 3px;
-    bottom: 30%;
     width: 30px;
     height: 30px;
     }
