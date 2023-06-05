@@ -100,16 +100,13 @@
     
   }
   .creator {
-    float: right;
-    right: 100px;
     bottom: 0;
     align-items: center;
   }
   .creator__photo {
-    display: inline-block;
+    /* display: inline-block; */
     max-width: 70px;
     height: 70px;
-    border-radius: 100%;
     margin-right: 25px;
     object-fit: cover;
     object-position: top;
@@ -212,14 +209,24 @@
     line-height: 144%;
    }
    .creator {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center; */
     /* max-height: 68px; */
    }
+   .creator__photo {
+    max-width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+    margin-right: 20px; 
+  }
    .creator__cite {
     font-size: 12px;
     line-height: 133%;
+    max-width: 174px;
+    padding-right: 0;
    }
  
 }

@@ -102,7 +102,7 @@ input {
 
   }
    .container {
-    max-width: 320px;
+    width: 320px;
     padding: 0 20px;
   }
   .section__title {
