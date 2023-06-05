@@ -76,7 +76,7 @@
 }
 
 .creator__cite {
-  /* width: 280px; */
+  max-width: 280px;
   min-height: 84px;
   padding-right: 30px;
   font-weight: 400;
