@@ -92,9 +92,8 @@
     padding-top: 30px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 26px;
-    min-width: 501px;
-    max-height: 105px;
+    line-height: 144%;
+    max-width: 700px;
     color: var(--white);
   }
 }
@@ -119,8 +118,7 @@
     padding-top: 30px;
     font-size: 16px;
     line-height: 22px;
-    min-width: 393px;
-    max-height: 94px;
+    max-width: 550px;
   }
 }
 @media (max-width: 450px) {
@@ -165,7 +163,5 @@
     line-height: 133%;
     min-width: 100%;
     margin: 0 auto;
-    
-
   }
 }

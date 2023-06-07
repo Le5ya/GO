@@ -104,11 +104,7 @@
   background-color: var(--gray);
   border: 3px solid #640AA3;
 }
-.halls-fieldset__lable:hover {
-  transition-duration: 0.5s;
-  background-color: var(--gray);
-  border: 3px solid #640AA3;
-}
+
 .halls-fieldset__lable:focus {
   transition-duration: 0.5s;
   background-color: var(--white);
@@ -225,9 +221,9 @@
 .wrap {
   display: flex;
   justify-content: flex-end;
-  max-width: 100%;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 0 19px;
+  padding: 0 11px;
 }
 @media (max-width: 1040px ){
 .halls-fieldset__lable {
