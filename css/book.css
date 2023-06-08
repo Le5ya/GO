@@ -105,7 +105,7 @@
   border: 3px solid #640AA3;
 }
 
-.halls-fieldset__lable:focus {
+.halls-fieldset__label:focus {
   transition-duration: 0.5s;
   background-color: var(--white);
   border: 3px solid #640AA3;

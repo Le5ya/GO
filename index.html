@@ -141,20 +141,20 @@
         <fieldset class="fieldset halls-fieldset">
           <legend class="fieldset__title">Выбери зал</legend>
           <!--<div class="halls__wrapper">-->
-          <label class="lable halls-fieldset__lable">
-                <input tabindex = "1" class="input halls-fieldset__input" type="radio" name="hall" value="80'S VIBES">
+          <label tabindex="0" class="lable halls-fieldset__lable">
+                <input  class="input halls-fieldset__input" type="radio" name="hall" value="80'S VIBES">
                 80's vibes
                 </label>
-                <label tabindex = "2" class="lable halls-fieldset__lable">
-                <input class="input halls-fieldset__input" type="radio" name="hall" value="STAR WARS">
+                <label tabindex="1" class="lable halls-fieldset__lable">
+                <input  class="input halls-fieldset__input" type="radio" name="hall" value="STAR WARS">
                 star wars
                 </label>
-              <label tabindex = "3" class="lable halls-fieldset__lable">
-                <input class="input halls-fieldset__input" type="radio" name="hall" value="WILD WEST">
+              <label tabindex="2" class="lable halls-fieldset__lable">
+                <input  class="input halls-fieldset__input" type="radio" name="hall" value="WILD WEST">
                 wild west
               </label>
-              <label tabindex = "4" class="lable halls-fieldset__lable">
-                <input class="input halls-fieldset__input" type="radio" name="hall" value="NEON STYLE">
+              <label tabindex="3" class="lable halls-fieldset__lable">
+                <input  class="input halls-fieldset__input" type="radio" name="hall" value="NEON STYLE">
                 neon style
               </label>
             <!--</div>-->
@@ -164,12 +164,11 @@
           <fieldset class="subfieldset">
             <legend class="subfieldset__title">Приставка</legend>
             <label class="subfieldset__item">
-              <input class="subfieldset__radio" type="radio" name="console" value="white">
-              Play STation
+              <input class="subfieldset__radio" type="radio" name="console" value="play-station">
+              Play Station
             </label>
             <label class="subfieldset__item">
               <input class="subfieldset__radio" type="radio" name="console" value="sega">
-              
               Sega Mega Drive
             </label>
             <label class="subfieldset__item">
@@ -401,5 +400,12 @@
       </div>
     </div>  
   </section>
+  <!-- <script>
+    document.addEventListener('click', event => {
+      if (event.target.match('label')) {
+        event.target.focus()
+      }
+    })
+  </script> -->
 </body>
 </html>
